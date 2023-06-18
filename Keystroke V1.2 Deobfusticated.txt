@@ -1,0 +1,1017 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local KeyStrokes = Instance.new("ScreenGui")
+local KeyStrokes_2 = Instance.new("Frame")
+local RMB = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local LMB = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local A = Instance.new("TextLabel")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local D = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local S = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local W = Instance.new("TextLabel")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Opt = Instance.new("ImageButton")
+local SPA = Instance.new("TextLabel")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local FpsMS = Instance.new("Folder")
+local fps = Instance.new("TextLabel")
+local ms = Instance.new("TextLabel")
+local mmmFrame = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local X = Instance.new("TextButton")
+local Buth = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Home = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Color = Instance.new("Frame")
+local Colorexe = Instance.new("Frame")
+local Picker = Instance.new("Frame")
+local Colour = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local Wheel = Instance.new("ImageButton")
+local Ring = Instance.new("ImageLabel")
+local Slider = Instance.new("ImageButton")
+local Slide = Instance.new("Frame")
+local RED = Instance.new("TextButton")
+local Frame_4 = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local Butc = Instance.new("TextButton")
+
+-- Properties
+
+KeyStrokes.Name = "KeyStrokes"
+KeyStrokes.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KeyStrokes.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+KeyStrokes_2.Name = "KeyStrokes"
+KeyStrokes_2.Parent = KeyStrokes
+KeyStrokes_2.AnchorPoint = Vector2.new(0, 1)
+KeyStrokes_2.BackgroundColor3 = Color3.new(1, 1, 1)
+KeyStrokes_2.BackgroundTransparency = 1
+KeyStrokes_2.BorderSizePixel = 0
+KeyStrokes_2.Position = UDim2.new(0.910178006, 0, 0.924776256, 0)
+KeyStrokes_2.Size = UDim2.new(0.0728050172, 0, 0.140215576, 0)
+
+RMB.Name = "RMB"
+RMB.Parent = KeyStrokes_2
+RMB.AnchorPoint = Vector2.new(0.5, 0.5)
+RMB.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+RMB.BorderSizePixel = 0
+RMB.Position = UDim2.new(0.734413385, 0, 0.875, 0)
+RMB.Size = UDim2.new(0.446686685, 0, 0.182252944, 0)
+RMB.Font = Enum.Font.Garamond
+RMB.Text = "RMB"
+RMB.TextColor3 = Color3.new(1, 1, 1)
+RMB.TextScaled = true
+RMB.TextSize = 30
+RMB.TextWrapped = true
+
+UITextSizeConstraint.Parent = RMB
+UITextSizeConstraint.MaxTextSize = 30
+
+LMB.Name = "LMB"
+LMB.Parent = KeyStrokes_2
+LMB.AnchorPoint = Vector2.new(0.5, 0.5)
+LMB.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+LMB.BorderSizePixel = 0
+LMB.Position = UDim2.new(0.264393687, 0, 0.875, 0)
+LMB.Size = UDim2.new(0.449072421, 0, 0.182252944, 0)
+LMB.Font = Enum.Font.Garamond
+LMB.Text = "LMB"
+LMB.TextColor3 = Color3.new(1, 1, 1)
+LMB.TextScaled = true
+LMB.TextSize = 30
+LMB.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = LMB
+UITextSizeConstraint_2.MaxTextSize = 30
+
+A.Name = "A"
+A.Parent = KeyStrokes_2
+A.AnchorPoint = Vector2.new(0.5, 0.5)
+A.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+A.BorderSizePixel = 0
+A.Position = UDim2.new(0.182960153, 0, 0.576687038, 0)
+A.Size = UDim2.new(0.286205351, 0, 0.361963242, 0)
+A.Font = Enum.Font.Garamond
+A.Text = "A"
+A.TextColor3 = Color3.new(1, 1, 1)
+A.TextScaled = true
+A.TextSize = 30
+A.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = A
+UITextSizeConstraint_3.MaxTextSize = 30
+
+D.Name = "D"
+D.Parent = KeyStrokes_2
+D.AnchorPoint = Vector2.new(0.5, 0.5)
+D.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+D.BorderSizePixel = 0
+D.Position = UDim2.new(0.814756751, 0, 0.576687038, 0)
+D.Size = UDim2.new(0.286000013, 0, 0.361999989, 0)
+D.Font = Enum.Font.Garamond
+D.Text = "D"
+D.TextColor3 = Color3.new(1, 1, 1)
+D.TextScaled = true
+D.TextSize = 30
+D.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = D
+UITextSizeConstraint_4.MaxTextSize = 30
+
+S.Name = "S"
+S.Parent = KeyStrokes_2
+S.AnchorPoint = Vector2.new(0.5, 0.5)
+S.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+S.BorderSizePixel = 0
+S.Position = UDim2.new(0.49727878, 0, 0.576687038, 0)
+S.Size = UDim2.new(0.286000013, 0, 0.361999989, 0)
+S.Font = Enum.Font.Garamond
+S.Text = "S"
+S.TextColor3 = Color3.new(1, 1, 1)
+S.TextScaled = true
+S.TextSize = 30
+S.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = S
+UITextSizeConstraint_5.MaxTextSize = 30
+
+W.Name = "W"
+W.Parent = KeyStrokes_2
+W.AnchorPoint = Vector2.new(0.5, 0.5)
+W.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+W.BorderSizePixel = 0
+W.Position = UDim2.new(0.49727878, 0, 0.177914113, 0)
+W.Size = UDim2.new(0.286000013, 0, 0.361999989, 0)
+W.Font = Enum.Font.Garamond
+W.Text = "W"
+W.TextColor3 = Color3.new(1, 1, 1)
+W.TextScaled = true
+W.TextSize = 30
+W.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = W
+UITextSizeConstraint_6.MaxTextSize = 30
+
+UIAspectRatioConstraint.Parent = KeyStrokes_2
+UIAspectRatioConstraint.AspectRatio = 1.269565224647522
+
+Opt.Name = "Opt"
+Opt.Parent = KeyStrokes_2
+Opt.BackgroundColor3 = Color3.new(1, 1, 1)
+Opt.BackgroundTransparency = 1
+Opt.Position = UDim2.new(-0.2835567, 0, 0.941435039, 0)
+Opt.Size = UDim2.new(0, 24, 0, 23)
+Opt.Image = "http://www.roblox.com/asset/?id=11948882716"
+Opt.ImageColor3 = Color3.new(0, 0, 0)
+Opt.ImageTransparency = 0.08999999612569809
+
+SPA.Name = "SPA"
+SPA.Parent = KeyStrokes_2
+SPA.AnchorPoint = Vector2.new(0.5, 0.5)
+SPA.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+SPA.BorderSizePixel = 0
+SPA.Position = UDim2.new(0.5, 0, 1.10000002, 0)
+SPA.Size = UDim2.new(0.923786223, 0, 0.223200276, 0)
+SPA.Font = Enum.Font.Unknown
+SPA.Text = "-----------------"
+SPA.TextColor3 = Color3.new(1, 1, 1)
+SPA.TextScaled = true
+SPA.TextSize = 30
+SPA.TextWrapped = true
+
+UITextSizeConstraint_7.Parent = SPA
+UITextSizeConstraint_7.MaxTextSize = 30
+
+FpsMS.Name = "Fps/MS"
+FpsMS.Parent = KeyStrokes_2
+
+fps.Name = "fps'"
+fps.Parent = FpsMS
+fps.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+fps.BorderSizePixel = 0
+fps.Position = UDim2.new(-0.409873545, 0, 0.508797586, 0)
+fps.Size = UDim2.new(0, 46, 0, 13)
+fps.Visible = false
+fps.Font = Enum.Font.Garamond
+fps.Text = "Fps:"
+fps.TextColor3 = Color3.new(1, 1, 1)
+fps.TextSize = 14
+fps.TextXAlignment = Enum.TextXAlignment.Left
+
+ms.Name = "ms"
+ms.Parent = FpsMS
+ms.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+ms.BorderSizePixel = 0
+ms.Position = UDim2.new(-0.409873545, 0, 0.682251334, 0)
+ms.Size = UDim2.new(0, 46, 0, 15)
+ms.Visible = false
+ms.Font = Enum.Font.Garamond
+ms.Text = "Fps:"
+ms.TextColor3 = Color3.new(1, 1, 1)
+ms.TextSize = 14
+ms.TextXAlignment = Enum.TextXAlignment.Left
+
+mmmFrame.Name = "mmmFrame"
+mmmFrame.Parent = KeyStrokes
+mmmFrame.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+mmmFrame.BorderSizePixel = 0
+mmmFrame.Position = UDim2.new(0.494812459, 0, 0.471030056, 0)
+mmmFrame.Size = UDim2.new(0, 256, 0, 163)
+mmmFrame.Visible = false
+
+Frame.Parent = mmmFrame
+Frame.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.23046875, 0, 0, 0)
+Frame.Size = UDim2.new(0, 3, 0, 163)
+
+Frame_2.Parent = mmmFrame
+Frame_2.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.498046875, 0, -0.616564393, 0)
+Frame_2.Rotation = 90
+Frame_2.Size = UDim2.new(0, 3, 0, 254)
+
+TextLabel.Parent = mmmFrame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(0, 60, 0, 24)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Menu"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 14
+TextLabel.TextStrokeTransparency = 0
+
+X.Name = "X"
+X.Parent = mmmFrame
+X.BackgroundColor3 = Color3.new(1, 1, 1)
+X.BackgroundTransparency = 1
+X.Position = UDim2.new(0.91015625, 0, 0, 0)
+X.Size = UDim2.new(0, 23, 0, 24)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.new(1, 1, 1)
+X.TextSize = 14
+X.TextStrokeColor3 = Color3.new(1, 0, 0)
+X.TextStrokeTransparency = 0
+
+Buth.Name = "Buth"
+Buth.Parent = mmmFrame
+Buth.BackgroundColor3 = Color3.new(1, 1, 1)
+Buth.BackgroundTransparency = 0.949999988079071
+Buth.Position = UDim2.new(0.015625, 0, 0.196319014, 0)
+Buth.Size = UDim2.new(0, 52, 0, 15)
+Buth.Font = Enum.Font.SourceSans
+Buth.Text = "Home"
+Buth.TextColor3 = Color3.new(1, 1, 1)
+Buth.TextSize = 14
+Buth.TextStrokeTransparency = 0
+
+TextLabel_2.Parent = mmmFrame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.2421875, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 163, 0, 25)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "KeyStrokes Settings"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 14
+TextLabel_2.TextStrokeTransparency = 0
+
+Home.Name = "Home"
+Home.Parent = mmmFrame
+Home.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.2578125, 0, 0.21472393, 0)
+Home.Size = UDim2.new(0, 183, 0, 121)
+
+TextLabel_3.Parent = Home
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Position = UDim2.new(0.276095361, 0, 0.0610573515, 0)
+TextLabel_3.Size = UDim2.new(0, 81, 0, 17)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Keystrokes UI"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 14
+TextLabel_3.TextStrokeTransparency = 0
+
+Frame_3.Parent = TextLabel_3
+Frame_3.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Frame_3.BorderColor3 = Color3.new(0, 0, 0)
+Frame_3.Position = UDim2.new(0, 0, 0.823529422, 0)
+Frame_3.Size = UDim2.new(0, 80, 0, 2)
+
+TextLabel_4.Parent = Home
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.Position = UDim2.new(0.0491803288, 0, 0.297520638, 0)
+TextLabel_4.Size = UDim2.new(0, 62, 0, 82)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Gui Created by Di33le or DIZZY#0625        Dm Me For Help!"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 14
+TextLabel_4.TextStrokeTransparency = 0
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = Home
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.Position = UDim2.new(0.622950792, 0, 0.429752052, 0)
+TextLabel_5.Size = UDim2.new(0, 53, 0, 17)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Hope You Enjoy!"
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextSize = 14
+TextLabel_5.TextStrokeTransparency = 0
+TextLabel_5.TextWrapped = true
+
+TextButton.Parent = Home
+TextButton.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+TextButton.BorderColor3 = Color3.new(1, 1, 1)
+TextButton.Position = UDim2.new(0.459016383, 0, 0.785123944, 0)
+TextButton.Size = UDim2.new(0, 89, 0, 13)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Enable Fps Gui"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextSize = 14
+TextButton.TextStrokeTransparency = 0
+
+Color.Name = "Color"
+Color.Parent = mmmFrame
+Color.BackgroundColor3 = Color3.new(0, 0, 0)
+Color.BorderSizePixel = 0
+Color.Position = UDim2.new(0.23046875, 0, 0, 0)
+Color.Size = UDim2.new(0, 3, 0, 163)
+Color.Visible = false
+
+Colorexe.Name = "Color/exe"
+Colorexe.Parent = Color
+Colorexe.BackgroundColor3 = Color3.new(0, 0, 0)
+Colorexe.BackgroundTransparency = 1
+Colorexe.BorderColor3 = Color3.new(1, 1, 1)
+Colorexe.BorderSizePixel = 2
+Colorexe.Position = UDim2.new(1, 14, 0.195885405, 0)
+Colorexe.Size = UDim2.new(0, 116, 0, 118)
+
+Picker.Name = "Picker"
+Picker.Parent = Colorexe
+Picker.AnchorPoint = Vector2.new(0, 1)
+Picker.BackgroundColor3 = Color3.new(1, 0.992157, 0.996078)
+Picker.BackgroundTransparency = 1
+Picker.BorderSizePixel = 0
+Picker.Position = UDim2.new(-0.00284278509, 0, 1.00000012, 0)
+Picker.Size = UDim2.new(0.702842832, 0, 1.02654815, -26)
+Picker.ZIndex = 4
+
+Colour.Name = "Colour"
+Colour.Parent = Picker
+Colour.AnchorPoint = Vector2.new(0, 1)
+Colour.BackgroundColor3 = Color3.new(1, 0.992157, 0.996078)
+Colour.BorderColor3 = Color3.new(0, 0, 0)
+Colour.Position = UDim2.new(-1.47207785, 129, 0.894296646, 0)
+Colour.Size = UDim2.new(0.0908471942, 0, 0.102346443, 0)
+Colour.SizeConstraint = Enum.SizeConstraint.RelativeYY
+
+TextLabel_6.Parent = Colour
+TextLabel_6.BackgroundColor3 = Color3.new(1, 0.988235, 0.988235)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.Position = UDim2.new(1.5, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(3, 0, 1, 0)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "20, 20,20"
+TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_6.TextSize = 14
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+Wheel.Name = "Wheel"
+Wheel.Parent = Picker
+Wheel.Active = false
+Wheel.BackgroundColor3 = Color3.new(0.972549, 0.972549, 0.972549)
+Wheel.BackgroundTransparency = 1
+Wheel.Position = UDim2.new(0.119924739, 0, -0.0516283587, 0)
+Wheel.Selectable = false
+Wheel.Size = UDim2.new(0.657234609, 0, 0.65651685, 0)
+Wheel.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Wheel.AutoButtonColor = false
+Wheel.Image = "rbxassetid://2849458409"
+
+Ring.Name = "Ring"
+Ring.Parent = Wheel
+Ring.AnchorPoint = Vector2.new(0.5, 0.5)
+Ring.BackgroundColor3 = Color3.new(1, 1, 1)
+Ring.BackgroundTransparency = 1
+Ring.Position = UDim2.new(0.5, 0, 0.5, 0)
+Ring.Size = UDim2.new(0.0799999982, 0, 0.0799999982, 0)
+Ring.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Ring.Image = "rbxassetid://244221613"
+Ring.ImageColor3 = Color3.new(1, 0.992157, 0.996078)
+
+Slider.Name = "Slider"
+Slider.Parent = Wheel
+Slider.Active = false
+Slider.BackgroundColor3 = Color3.new(1, 0.991563, 0.993646)
+Slider.BorderColor3 = Color3.new(1, 1, 1)
+Slider.Position = UDim2.new(1.24090469, 0, 0.145487353, 0)
+Slider.Selectable = false
+Slider.Size = UDim2.new(0.150000006, 0, 1, 0)
+Slider.SizeConstraint = Enum.SizeConstraint.RelativeYY
+Slider.AutoButtonColor = false
+Slider.Image = "rbxassetid://156579757"
+
+Slide.Name = "Slide"
+Slide.Parent = Slider
+Slide.BackgroundColor3 = Color3.new(0.0588235, 0.0588235, 0.0588235)
+Slide.BorderSizePixel = 0
+Slide.Size = UDim2.new(1, 0, 0.0399999991, 0)
+
+RED.Name = "RED"
+RED.Parent = Colorexe
+RED.BackgroundColor3 = Color3.new(1, 1, 1)
+RED.BackgroundTransparency = 1
+RED.Position = UDim2.new(0.905172408, 0, 0.127118647, 0)
+RED.Size = UDim2.new(0, 69, 0, 12)
+RED.Font = Enum.Font.SourceSans
+RED.Text = "Keystroke RED"
+RED.TextColor3 = Color3.new(1, 0, 0)
+RED.TextSize = 14
+RED.TextStrokeTransparency = 0
+
+Frame_4.Parent = Color
+Frame_4.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame_4.BackgroundTransparency = 0.6399999856948853
+Frame_4.Position = UDim2.new(40.6666679, 0, 0.245398775, 0)
+Frame_4.Size = UDim2.new(0, 68, 0, 114)
+
+TextLabel_7.Parent = Frame_4
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.Position = UDim2.new(0, 0, 0.333333343, 0)
+TextLabel_7.Rotation = 40
+TextLabel_7.Size = UDim2.new(0, 68, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "COMMING SOON"
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14
+TextLabel_7.TextStrokeTransparency = 0
+TextLabel_7.TextWrapped = true
+
+Butc.Name = "Butc"
+Butc.Parent = mmmFrame
+Butc.BackgroundColor3 = Color3.new(1, 1, 1)
+Butc.BackgroundTransparency = 0.949999988079071
+Butc.Position = UDim2.new(0.0160000008, 0, 0.30399999, 0)
+Butc.Size = UDim2.new(0, 52, 0, 15)
+Butc.Font = Enum.Font.SourceSans
+Butc.Text = "Design"
+Butc.TextColor3 = Color3.new(1, 1, 1)
+Butc.TextSize = 14
+Butc.TextStrokeTransparency = 0
+
+-- Scripts
+
+local function JHWXRW_fake_script() -- KeyStrokes_2.Input 
+	local script = Instance.new('LocalScript', KeyStrokes_2)
+
+	local UIS = game:GetService("UserInputService")
+	local buttons = {}
+	buttons.UserInputType = {}
+	buttons.KeyCode = {}
+	local uit = buttons.UserInputType
+	local kc = buttons.KeyCode
+	kc.S = script.Parent.S
+	kc.A = script.Parent.A
+	kc.W = script.Parent.W
+	kc.D = script.Parent.D
+	kc.Space = script.Parent.SPA
+	uit.MouseButton1 = script.Parent.LMB
+	uit.MouseButton2 = script.Parent.RMB
+	
+	function checkKey1(key)
+		local result
+		if key.KeyCode == Enum.KeyCode.Unknown then
+			result = "UserInputType" 
+		else
+			result = "KeyCode" 
+		end
+		return result
+	end
+	
+	function scanKey(key)
+		local k = checkKey1(key)
+		for i, v in pairs(buttons[k]) do
+			if i == "Space" then
+				if key.KeyCode == Enum.KeyCode.Space then
+					return v
+				end
+			elseif key[k] == Enum[k][i] then
+				return v
+			end
+		end
+	end
+	
+	UIS.InputBegan:Connect(function(key, typing)
+		if typing then return end	
+		local v = scanKey(key)
+		if v then
+			v.TextColor3 = Color3.new(0, 1, 1)
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(key, typing)
+		if typing then return end	
+		local v = scanKey(key)
+		if v then
+			v.TextColor3 = Color3.new(1, 1, 1)
+		end
+	end)
+	
+end
+coroutine.wrap(JHWXRW_fake_script)()
+local function LDNAN_fake_script() -- KeyStrokes_2.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', KeyStrokes_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (10); --sppeeed bc im epic scripter hehehehhaw
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(LDNAN_fake_script)()
+local function VICHIFK_fake_script() -- Opt.LocalScript 
+	local script = Instance.new('LocalScript', Opt)
+
+	local b = script.Parent
+	
+	b.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Parent.mmmFrame.Visible = true
+		script.Parent.Parent.Parent.mmmFrame.Position = ("0.495, 0,0.471, 0")
+	end)
+end
+coroutine.wrap(VICHIFK_fake_script)()
+local function NAKLF_fake_script() -- fps.FPSScript 
+	local script = Instance.new('LocalScript', fps)
+
+	local FPSLabel = script.Parent
+	while wait(1) do
+		local FPS = game:GetService("Workspace"):GetRealPhysicsFPS()
+		FPSLabel.Text = ' FPS: '..math.floor(FPS)
+	end
+end
+coroutine.wrap(NAKLF_fake_script)()
+local function NCDKDGS_fake_script() -- ms.PingScript 
+	local script = Instance.new('LocalScript', ms)
+
+	local PingLabel = script.Parent
+	while wait(1) do
+		local Ping = 300-((1/wait())*10)
+		if Ping < 1 then
+			Ping = 1
+		end
+		PingLabel.Text = ' Ping: '..math.floor(Ping)
+	end
+end
+coroutine.wrap(NCDKDGS_fake_script)()
+local function AASNUV_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+
+	local b = script.Parent
+	
+	b.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Parent.mmmFrame.Visible = false
+	end)
+end
+coroutine.wrap(AASNUV_fake_script)()
+local function LVLC_fake_script() -- Buth.LocalScript 
+	local script = Instance.new('LocalScript', Buth)
+
+	local B = script.Parent
+	
+	B.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Home.Visible = true
+		script.Parent.Parent.Color.Visible = false
+	end)
+end
+coroutine.wrap(LVLC_fake_script)()
+local function KOCWINV_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local button = script.Parent -- Replace "script.Parent" with the reference to your button
+	
+	local isToggled = false -- Initial state of the button (not toggled)
+	
+	local function toggleButton()
+		isToggled = not isToggled -- Invert the toggle state
+		if isToggled then
+			script.Parent.Text = ("Disable Fps Gui")
+			script.Parent.Parent.Parent.Parent.KeyStrokes["Fps/MS"].ms.Visible = true
+			script.Parent.Parent.Parent.Parent.KeyStrokes["Fps/MS"]["fps'"].Visible = true
+	
+		else
+			script.Parent.Text = ("Enable Fps Gui")
+			script.Parent.Parent.Parent.Parent.KeyStrokes["Fps/MS"].ms.Visible = false
+			script.Parent.Parent.Parent.Parent.KeyStrokes["Fps/MS"]["fps'"].Visible = false
+	
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleButton)
+	
+end
+coroutine.wrap(KOCWINV_fake_script)()
+local function BQOH_fake_script() -- Picker.ColorPicker 
+	local script = Instance.new('LocalScript', Picker)
+
+	--------------------------
+	-- Localize
+	--------------------------
+	local ceil,clamp,atan2,pi	= math.ceil,math.clamp,math.atan2,math.pi
+	local tostr,sub				= tostring,string.sub
+	local fromHSV				= Color3.fromHSV
+	local v2,udim2				= Vector2.new,UDim2.new
+	--------------------------
+	-- GUI Elements
+	--------------------------
+	local wheel		= script.Parent:WaitForChild("Wheel");
+	local ring		= wheel:WaitForChild("Ring");
+	
+	local slider	= wheel:WaitForChild("Slider")
+	local slide		= slider:WaitForChild("Slide")
+	
+	local colour	= script.Parent:WaitForChild("Colour");
+	
+	--------------------------
+	-- Input variables
+	--------------------------
+	local UserInputService	= game:GetService("UserInputService")
+	local Mouse				= game.Players.LocalPlayer:GetMouse()
+	
+	local WheelDown			= false
+	local SlideDown			= false
+	
+	--------------------------
+	-- Math
+	--------------------------
+	
+	local function toPolar(v)
+		return atan2(v.y, v.x), v.magnitude;
+	end
+	
+	local function radToDeg(x)
+		return ((x + pi) / (2 * pi)) * 360;
+	end
+	
+	--------------------------
+	-- Color control
+	--------------------------
+	local hue, saturation, value = 0, 0, 1;
+	
+	local function update()
+		local c = fromHSV(hue, saturation, value);
+		
+		colour.BackgroundColor3 = c
+		colour.TextLabel.Text	=	sub(tostr(ceil(clamp(c.r*255,0,255))),1,3)..", "..
+									sub(tostr(ceil(clamp(c.g*255,0,255))),1,3)..", "..
+									sub(tostr(ceil(clamp(c.b*255,0,255))),1,3)
+	end
+	
+	--------------------------
+	-- GUI control
+	--------------------------
+	local function UpdateSlide(iX,iY)	
+		local rY = iY - slider.AbsolutePosition.y;
+		local cY = clamp(rY, 0, slider.AbsoluteSize.y - slide.AbsoluteSize.y);
+		slide.Position = udim2(0, 0, 0, cY);
+		
+		value = 1 - (cY / (slider.AbsoluteSize.y - slide.AbsoluteSize.y));
+		slide.BackgroundColor3 = fromHSV(0, 0, 1-value);
+		
+		update();
+	end
+	local function UpdateRing(iX,iY)
+		local r = wheel.AbsoluteSize.x/2
+		local d = v2(iX, iY) - wheel.AbsolutePosition - wheel.AbsoluteSize/2;
+	
+		if (d:Dot(d) > r*r) then
+			d = d.unit * r;
+		end
+		
+		ring.Position = udim2(0.5, d.x, 0.5, d.y);
+		
+		local phi, len = toPolar(d * v2(1, -1));
+		hue, saturation = radToDeg(phi)/360, len / r;
+		slider.BackgroundColor3 = fromHSV(hue, saturation, 1);
+		
+		update();
+	end
+	
+	
+	wheel.MouseButton1Down:Connect(function()
+		WheelDown = true
+		UpdateRing(Mouse.X,Mouse.Y)
+	end)
+	slider.MouseButton1Down:Connect(function()
+		SlideDown = true
+		UpdateSlide(Mouse.X,Mouse.Y)
+	end)
+	
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			WheelDown = false
+			SlideDown = false
+		end
+	end)
+	
+	wheel.MouseMoved:Connect(function()
+		if WheelDown then
+			UpdateRing(Mouse.X,Mouse.Y)
+		end
+	end)
+	slider.MouseMoved:Connect(function()
+		if SlideDown then
+			UpdateSlide(Mouse.X,Mouse.Y)
+		end
+	end)
+end
+coroutine.wrap(BQOH_fake_script)()
+local function YAPAGE_fake_script() -- Colorexe.LocalScript 
+	local script = Instance.new('LocalScript', Colorexe)
+
+	
+	local Gui = script.Parent
+	local function ParseForColor3(str) --returns a tuple of 3 integers, the r g and b in the string.
+	    if (str):find("%d+%s*,%s*%d+%s*,%s*%d+") then
+	        local s, e = (str):find("%d+%s*,%s*%d+%s*,%s*%d+");
+	        local sub = (str):sub(s, e);
+	        local r, g, b;
+	        local a, b = (str):find("%d+%s*,");
+	        local r1 = (str):sub(a, b);
+	        local c, d = (str):find("%d+%s*,", b);
+	        local g1 = (str):sub(c, d);
+	        local e, f = (str):find("%s*%d+", d);
+	        local b1 = (str):sub(e, f);
+	        r = tonumber((r1):sub((r1):find("%d+")));
+	        g = tonumber((g1):sub((g1):find("%d+")));
+	        b = tonumber((b1):sub((b1):find("%d+")));
+	        return r, g, b;
+	    end
+	end
+	Gui.Picker.Colour.TextLabel.Changed:Connect(function()
+		local Color = Gui.Picker.Colour.TextLabel.Text
+		local r,g,b = ParseForColor3(Color)
+		local newR,newG,newB = 255 - r,255 - g, 255 - b
+		local red,green,blue = r - r/1.5,g - g/1.5,b - b/1.5
+		for i,v in pairs(script.Parent.Parent.Parent.Parent.KeyStrokes:GetDescendants())do
+		if v:IsA("ImageLabel") then
+				v.BackgroundColor3 = Color3.fromRGB(r,g,b)
+			end
+			if v:IsA("Frame") then
+				v.backgroundColor3 = Color3.fromRGB(r,g,b)
+			end
+			if v:IsA("TextButton") or v:IsA("TextBox") or v:IsA("TextLabel") then
+				v.BackgroundColor3 = Color3.fromRGB(red,green,blue)
+			end
+		end
+	end)
+end
+coroutine.wrap(YAPAGE_fake_script)()
+local function DBTZZUI_fake_script() -- RED.LocalScript 
+	local script = Instance.new('LocalScript', RED)
+
+	local b = script.Parent
+	
+	b.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.KeyStrokes.Custy.Value = '255,0,0'
+	end)
+		
+	
+	
+end
+coroutine.wrap(DBTZZUI_fake_script)()
+local function VITH_fake_script() -- Butc.LocalScript 
+	local script = Instance.new('LocalScript', Butc)
+
+	local B = script.Parent
+	
+	B.MouseButton1Up:Connect(function()
+		script.Parent.Parent.Home.Visible = false
+		script.Parent.Parent.Color.Visible = true
+	end)
+end
+coroutine.wrap(VITH_fake_script)()
+local function HXXVTQ_fake_script() -- mmmFrame.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', mmmFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (10); --sppeeed bc im epic scripter hehehehhaw
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(HXXVTQ_fake_script)()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
