@@ -1,11 +1,4 @@
---[[
-
-		Gui2Lua™
-		10zOfficial
-		Version 1.0.0
-
-]]
-
+--If you want to edit it thats ok but please grant me credit (dizzytheone) on discord
 
 -- Instances
 
