@@ -1,4 +1,4 @@
-               elseif lowercaseMessage == "lag.test" then
+
         local function Chat(msg)
             game.Players:Chat(msg)
         end
