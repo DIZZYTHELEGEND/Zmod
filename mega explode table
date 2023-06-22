@@ -1,8 +1,9 @@
 
 --chat function
-        local function Chat(msg)
-            game.Players:Chat(msg)
-        end
+local function Chat(msg)
+    game.Players.LocalPlayer:Chat(msg)
+end
+
 
 --gears
 
@@ -128,16 +129,17 @@ Chat("gear me 000000000000000000000000000000000000000000243788010")
 Chat("gear me 000000000000000000000000000000000000000000243788010")
 
 Chat("ph me spam click")
---equip tools
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-local Backpack = LocalPlayer:WaitForChild("Backpack")
-local Tools = Backpack:GetChildren()
+local Character = LocalPlayer.Character
+local Humanoid = Character:WaitForChild("Humanoid")
+local Backpack = LocalPlayer.Backpack
 
 -- Equip all the tools
-for _, Tool in ipairs(Tools) do
+for _, Tool in ipairs(Backpack:GetChildren()) do
     if Tool:IsA("Tool") then
-        Tool.Parent = LocalPlayer.Character
-        wait() -- Give it some time to equip
+        Tool.Parent = Character
+        wait(0.05) -- Give it some time to equip
     end
 end
+
