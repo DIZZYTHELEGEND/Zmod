@@ -1,0 +1,166 @@
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+if PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket") then
+			PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket"):Destroy()
+			Chat("removetools me")
+		end
+		if PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket") then
+			PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket"):Destroy()
+			Chat("removetools me")
+		end
+		Chat("gear me 000000000000000000000000000000000000000000000000000000018474459")
+		PlayerService.LocalPlayer.Backpack:WaitForChild("PaintBucket").Parent = PlayerService.LocalPlayer.Character
+		local bucket = PlayerService.LocalPlayer.Character:WaitForChild("PaintBucket")
+		colorallOriginal()
+	end)
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  transformToColor3 = colorAPI.transformToColor3
+	colorAPI.colorallOriginal = function()
+		
+		coroutine.resume(coroutine.create(function()
+			pcall(function()
+				colorAPI.colorHouse({
+					wallsC = {transformToColor3(BrickColor.new("Brick yellow"))},
+					baseC = {transformToColor3(BrickColor.new("Bright green"))},
+					roofC = {transformToColor3(BrickColor.new("Bright red"))},
+					WANDDC = {transformToColor3(BrickColor.new("Dark orange"))},
+					stairsC = {transformToColor3(BrickColor.new("Dark stone grey"))},
+					floorC = {transformToColor3(BrickColor.new("Medium blue"))},
+					rooftsC = {transformToColor3(BrickColor.new("Reddish brown"))},
+					chiC = {transformToColor3(BrickColor.new("Sand red"))}
+				})
+			end)
+		end))
+		coroutine.resume(coroutine.create(function()
+			pcall(function()
+				colorAPI.colorBuildingBricks({
+					DarkStoneGrey = {transformToColor3(BrickColor.new("Dark stone grey"))},
+					DeepBlue = {transformToColor3(BrickColor.new("Deep blue"))},
+					NY = {transformToColor3(BrickColor.new("New Yeller"))},
+					IW = {transformToColor3(BrickColor.new("Institutional white"))},
+					LimeGreen = {transformToColor3(BrickColor.new("Lime green"))},
+					MSG = {transformToColor3(BrickColor.new("Medium stone grey"))},
+					RB = {transformToColor3(BrickColor.new("Really black"))},
+					TP = {transformToColor3(BrickColor.new("Toothpaste"))},
+					RR = {transformToColor3(BrickColor.new("Really red"))}
+				})
+			end)
+		end))
+		pcall(function()
+			colorAPI.color(workspace.Terrain._Game.Workspace.Baseplate,transformToColor3(BrickColor.new("Bright green")))
+		end)
+		coroutine.resume(coroutine.create(function()
+			pcall(function()
+				colorAPI.colorObbyBox(transformToColor3(BrickColor.new("Teal")))
+			end)
+		end))
+		coroutine.resume(coroutine.create(function()
+			colorAPI.colorObbyBricks(transformToColor3(BrickColor.new("Really red")))
+		end))
+		coroutine.resume(coroutine.create(function()
+			pcall(function()
+				colorAPI.colorAdminDivs(transformToColor3(BrickColor.new("Dark stone grey")))
+			end)
+		end))
+		coroutine.resume(coroutine.create(function()
+			pcall(function()
+				for i,pad in pairs(adminPads:GetChildren()) do
+					if pad.Name ~= "Touch to get admin" then
+						colorAPI.color(pad:FindFirstChildOfClass("Part"),transformToColor3(BrickColor.new("Bright red"))) 
+					else
+						colorAPI.color(pad:FindFirstChildOfClass("Part"),transformToColor3(BrickColor.new("Bright green")))
+					end      
+				end 
+			end)
+		end))
+		pcall(function()
+			colorAPI.colorRegen(colorAPI.transformToColor3(BrickColor.new("Bright violet")))
+		end)
+	end
+	local colorallOriginal = colorAPI.colorallOriginal
+	local colorAllOriginal = colorAPI.colorallOriginal
+	colorAPI.colorallRandom = function()
+
+		if PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket") then
+			PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket"):Destroy()
+			act("removetools me")
+		end
+		if PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket") then
+			PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket"):Destroy()
+			act("removetools me")
+		end
+		act("gear me 000000000000000000000000000018474459")
+		PlayerService.LocalPlayer.Backpack:WaitForChild("PaintBucket").Parent = PlayerService.LocalPlayer.Character
+		local bucket = PlayerService.LocalPlayer.Character:WaitForChild("PaintBucket")
+		for i,v in pairs(workspace:GetDescendants()) do
+			coroutine.wrap(function()
+				if v:IsA("Part") then
+					colorAPI.color(v,math.random(0,255),math.random(0,255),math.random(0,255))
+				end
+			end)()
+		end
+	end
+	local colorAllRandom = colorAPI.colorallRandom
+	local colorallRandom = colorAPI.colorallRandom
+
+
+    local function paintmap(R,G,B)
+		
+		
+		coroutine.resume(coroutine.create(function()
+			pcall(function()
+				colorAPI.colorHouse({
+					wallsC = {R,G,B},
+					baseC = {R,G,B},
+					roofC = {R,G,B},
+					WANDDC = {R,G,B},
+					stairsC = {R,G,B},
+					floorC = {R,G,B},
+					rooftsC = {R,G,B},
+					chiC = {R,G,B}
+				})
+			end)
+		end))
+		coroutine.resume(coroutine.create(function()
+			pcall(function()
+				colorAPI.colorBuildingBricks({
+					DarkStoneGrey = {R,G,B},
+					DeepBlue = {R,G,B},
+					NY = {R,G,B},
+					IW = {R,G,B},
+					LimeGreen = {R,G,B},
+					MSG = {R,G,B},
+					RB = {R,G,B},
+					TP = {R,G,B},
+					RR = {R,G,B}
+				})
+			end)
+		end))
+		
+		colorAPI.colorObbyBox(R,G,B)
+		colorAPI.colorObbyBricks(R,G,B)
+		colorAPI.colorAdminDivs(R,G,B)
+		colorAPI.colorRegen(R,G,B)
+		colorAPI.colorPads(R,G,B)
+		pcall(function()
+			colorAPI.color(workspace.Terrain._Game.Workspace.Baseplate, R,G,B)
+		end)
+    end
