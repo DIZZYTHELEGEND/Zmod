@@ -1,20 +1,82 @@
-        local function Chat(msg)
-            game.Players:Chat(msg)
-        end
+ local PlayerService = game:GetService("Players")
 
-if PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket") then
-			PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket"):Destroy()
-			Chat("removetools me")
-		end
-		if PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket") then
-			PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket"):Destroy()
-			Chat("removetools me")
-		end
-		Chat("gear me 000000000000000000000000000000000000000000000000000000018474459")
-		PlayerService.LocalPlayer.Backpack:WaitForChild("PaintBucket").Parent = PlayerService.LocalPlayer.Character
-		local bucket = PlayerService.LocalPlayer.Character:WaitForChild("PaintBucket")
-		colorallOriginal()
-	end)
+local function Chat(msg)
+    PlayerService:Chat(msg)
+end
+
+local function paintMap(R, G, B)
+    coroutine.resume(coroutine.create(function()
+        pcall(function()
+            colorAPI.colorHouse({
+                wallsC = {R, G, B},
+                baseC = {R, G, B},
+                roofC = {R, G, B},
+                WANDDC = {R, G, B},
+                stairsC = {R, G, B},
+                floorC = {R, G, B},
+                rooftsC = {R, G, B},
+                chiC = {R, G, B}
+            })
+        end)
+    end))
+
+    coroutine.resume(coroutine.create(function()
+        pcall(function()
+            colorAPI.colorBuildingBricks({
+                DarkStoneGrey = {R, G, B},
+                DeepBlue = {R, G, B},
+                NY = {R, G, B},
+                IW = {R, G, B},
+                LimeGreen = {R, G, B},
+                MSG = {R, G, B},
+                RB = {R, G, B},
+                TP = {R, G, B},
+                RR = {R, G, B}
+            })
+        end)
+    end))
+
+    colorAPI.colorObbyBox(R, G, B)
+    colorAPI.colorObbyBricks(R, G, B)
+    colorAPI.colorAdminDivs(R, G, B)
+    colorAPI.colorRegen(R, G, B)
+    colorAPI.colorPads(R, G, B)
+
+    pcall(function()
+        colorAPI.color(workspace.Terrain._Game.Workspace.Baseplate, R, G, B)
+    end)
+end
+
+local function removePaintBucket()
+    if PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket") then
+        PlayerService.LocalPlayer.Backpack:FindFirstChild("PaintBucket"):Destroy()
+        Chat("removetools me")
+    end
+
+    if PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket") then
+        PlayerService.LocalPlayer.Character:FindFirstChild("PaintBucket"):Destroy()
+        Chat("removetools me")
+    end
+end
+
+local function equipPaintBucket()
+    Chat("gear me 000000000000000000000000000000000000000000000000000000018474459")
+    PlayerService.LocalPlayer.Backpack:WaitForChild("PaintBucket").Parent = PlayerService.LocalPlayer.Character
+    return PlayerService.LocalPlayer.Character:WaitForChild("PaintBucket")
+end
+
+local function colorAllOriginal()
+    removePaintBucket()
+    equipPaintBucket()
+    colorAPI.colorallOriginal()
+end
+
+local function colorAllRandom()
+    removePaintBucket()
+    equipPaintBucket()
+    colorAPI.colorallRandom()
+end
+
   
   
   
