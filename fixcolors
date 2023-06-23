@@ -247,10 +247,4 @@ end)
 wait(0.6)
 game.Players:Chat("ungear 000000000000000000000000000000000000000000000000000000000 me "..math.random(99999))
 --nil
-       
-      task.wait(0.25)
-      game.Players:Chat(":colorshifttop 600 400 0")
-      game.Players:Chat(":fogcolor 255,255,255")
-      game.Players:Chat(":fogend 10")
-      game.Players:Chat(":time 12")
-   
+
