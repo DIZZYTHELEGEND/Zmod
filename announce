@@ -1,0 +1,16 @@
+
+local Players = game:GetService("Players")
+
+local function onChatted(message)
+    local lowercaseMessage = message:lower()
+    if lowercaseMessage:sub(1, 9) == ".announce" then
+        local text = string.sub(lowercaseMessage, 11)
+        game.Players:Chat("blind all")
+        game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[Zmod :D]\n "..text)
+        wait(6)
+        game.Players:Chat("unblind all")
+    end
+end
+
+
+Players.LocalPlayer.Chatted:Connect(onChatted)
