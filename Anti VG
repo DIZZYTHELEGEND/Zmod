@@ -1,0 +1,16 @@
+ Loops.antivg = true
+    repeat game:GetService("RunService").RenderStepped:Wait() pcall(function()
+    for i,v in pairs(game.Players:GetPlayers()) do
+        spawn(function()
+            if v.Character:FindFirstChild("VampireVanquisher") then v.Character:FindFirstChild("VampireVanquisher"):Destroy() game.Players:Chat("punish "..v.Name)game.Players:Chat("punish "..v.Name)
+            game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n Lol Trying To Crash? Well Its Failed :Skull: \n\n Get Better Crash Kid.")
+                end
+        end)
+        spawn(function()
+            if v.Backpack:FindFirstChild("VampireVanquisher") then v.Backpack:FindFirstChild("VampireVanquisher"):Destroy() game.Players:Chat("punish "..v.Name)game.Players:Chat("punish "..v.Name)
+            game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n Lol Trying To Crash? Well Its Failed :Skull: \n\n Get Better Crash Kid.")
+                end
+        end)
+    end
+    end)until not Loops.antivg
+end)
