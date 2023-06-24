@@ -241,5 +241,5 @@ end
 activateItems(game.Players.LocalPlayer, {3, "true"})
 
 
-task.wait(0.5)
+task.wait(5)
 Chat(".ref")
