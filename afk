@@ -1,0 +1,22 @@
+local UserInputService = game:GetService("UserInputService")
+local afk = false
+
+local function Chat(msg)
+    game.Players:Chat(msg)
+end
+
+UserInputService.WindowFocusReleased:Connect(function()
+    afk = true
+    Chat("name me Zmod:[AFK]")
+    Chat("ff me")
+    Chat("god me")
+    print("AFK")
+end)
+
+UserInputService.WindowFocused:Connect(function()
+    afk = false
+    Chat("unname me")
+    Chat("unff me")
+    Chat("ungod me")
+    print("Not AFK")
+end)
