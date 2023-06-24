@@ -128,18 +128,27 @@ Chat("gear me 000000000000000000000000000000000000000000243788010")
 Chat("gear me 000000000000000000000000000000000000000000243788010")
 Chat("gear me 000000000000000000000000000000000000000000243788010")
 
-Chat("ph me spam click")
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-local Character = LocalPlayer.Character
-local Humanoid = Character:WaitForChild("Humanoid")
-local Backpack = LocalPlayer.Backpack
+local function activateItems(speaker, args)
+	local Backpack = speaker:FindFirstChildOfClass("Backpack")
+	local amount = tonumber(args[1]) or 1
+	local delayEnabled = args[2] and args[2]:lower() == "true" or false
 
--- Equip all the tools
-for _, Tool in ipairs(Backpack:GetChildren()) do
-    if Tool:IsA("Tool") then
-        Tool.Parent = Character
-        wait(0.05) -- Give it some time to equip
-    end
+	for _, v in ipairs(Backpack:GetChildren()) do
+		v.Parent = speaker.Character
+		task.spawn(function()
+			for _ = 1, amount do
+				v:Activate()
+				if delayEnabled then
+					wait(0.1)
+				end
+			end
+			v.Parent = Backpack
+		end)
+	end
 end
+
+
+activateItems(game.Players.LocalPlayer, {3, "true"})
+
+
 
