@@ -8,7 +8,6 @@ while true do
     Chat("unjail all")
     Chat("thaw all")
     Chat("speed all 16")
-    Chat("unsize all")
     Chat("unname all")
     Chat("ungear all")
     Chat("unblind all")
