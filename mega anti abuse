@@ -11,5 +11,7 @@ while true do
     Chat("unsize all")
     Chat("unname all")
     Chat("ungear all")
+    Chat("unblind all")
+    Chat("h SERVER IS PROTECTED BY ZMOD")
     wait(1)
 end
