@@ -1,6 +1,7 @@
-local function Chat(msg)
-    game.Players.LocalPlayer:Chat(msg)
-end
+       local function Chat(msg)
+
+            game.Players:Chat(msg)
+        end
 
 while true do
     Chat("unpunish all")
