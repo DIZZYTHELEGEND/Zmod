@@ -1,14 +1,11 @@
-         local function Chat(msg)
-            game.Players:Chat(msg)
-        end
-
+local function Chat(msg)
+    game.Players.LocalPlayer:Chat(msg)
+end
 
 while true do
-
-Chat("unpunish all")
-Chat("unjail all")
-Chat("thaw all")
-
-wait(1)
-
+    Chat("unpunish all")
+    Chat("unjail all")
+    Chat("thaw all")
+    wait(1)
 end
+
