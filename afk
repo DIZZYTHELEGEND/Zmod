@@ -7,7 +7,7 @@ end
 
 UserInputService.WindowFocusReleased:Connect(function()
     afk = true
-    Chat("name me Zmod:[AFK]")
+    Chat("name me [AFK]\n "..game.Players.LocalPlayer.DisplayName)
     Chat("ff me")
     Chat("god me")
     print("AFK")
