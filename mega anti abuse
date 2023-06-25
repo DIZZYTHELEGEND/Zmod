@@ -1,0 +1,15 @@
+       local function Chat(msg)
+
+            game.Players:Chat(msg)
+        end
+
+while true do
+    Chat("unpunish all")
+    Chat("unjail all")
+    Chat("thaw all")
+    Chat("speed all 16")
+    Chat("unsize all")
+    Chat("unname all")
+    Chat("ungear all")
+    wait(1)
+end
