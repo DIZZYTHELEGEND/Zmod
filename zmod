@@ -1,0 +1,1455 @@
+function logn(msg)
+game.StarterGui:SetCore("SendNotification",  {
+ Title = "Zirconia";
+ Text = msg;
+ Icon = "rbxassetid://13781476993";
+ Duration = 5;
+ Callback = NotificationBindable;
+})
+end
+
+if _G.ZmodExecuted then return logn("You dumb fuck why would u execute 2 of the same scripts like get a brain") end
+_G.ZmodExecuted = true
+
+
+
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/announce'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/exptable/afk'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/playerlist(scv2)'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/lg'),true))() 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/pern%20admin'),true))() 
+
+
+
+
+
+
+
+local gameFlr = workspace.Terrain._Game
+local adminFlr = gameFlr.Admin
+
+local userId = game.Players.LocalPlayer.UserId
+
+-- services
+local rns = game:GetService("RunService")
+local tps = game:GetService("TeleportService")
+local http = game:GetService("HttpService")
+local ws = game:GetService("Workspace")
+local plyrs = game:GetService("Players")
+local uis = game:GetService("UserInputService")
+
+shared.gpcheck = true
+
+task.spawn(function()
+    while true do task.wait() -- It uses while true do instead now
+        coroutine.wrap(function() -- PadAbuse
+			if padAbuse == true then
+				local pads = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:GetChildren("Head")
+				for i, pad in pairs(pads) do
+					coroutine.wrap(function()
+						pcall(function()
+							local cre = pad.Head
+							local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+							firetouchinterest(cre, spr, 1)
+                            firetouchinterest(cre, spr, 0)
+                            firetouchinterest(cre, spr, 1)
+							task.wait()
+							firetouchinterest(cre, spr, 0)
+							
+							if pad.Name ~= game.Players.LocalPlayer.Name.."'s admin" then
+								fireclickdetector(adminFlr.Regen.ClickDetector, 0)
+							end
+						end)
+					end)()
+				end
+			end
+        end)()
+		
+        coroutine.wrap(function() -- Perm
+			local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+			if perm ~= true or adminFlr.Pads:FindFirstChild(game.Players.LocalPlayer.Name.."'s admin") ~= nil then 
+			else
+				pcall(function()
+					local pad = adminFlr.Pads:FindFirstChild("Touch to get admin")
+					local a = pad.Head
+					firetouchinterest(a, spr, 1)
+                    firetouchinterest(a, spr, 0)
+                    firetouchinterest(a, spr, 1)
+					task.wait()
+					firetouchinterest(a, spr, 0)
+				end)
+			end
+        end)()
+    end
+end)
+
+--// Gamepass checker \\--
+
+task.spawn(function()
+    local passid = 66254 or 64354
+    if shared.gpcheck == true then
+        if string.match(game:HttpGet("https://inventory.roblox.com/v1/users/" .. userId .. "/items/GamePass/" .. passid), passid) then
+            print("Perm found")
+            gamepassperm = true
+            perm = false 
+            print("Fake perm for those that didn't buy the gamepass. It's pointless if you do have it unless the API has an outage")
+        else
+            print("Perm not found. Enabling pad grabber")
+            perm = true
+        end
+    end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local function executePrints()
+    wait(1.5)
+    print('██████╗ ███████╗███████╗██╗██╗░░██╗  ██╗░██████╗')
+    print('██╔══██╗██╔════╝██╔════╝██║╚██╗██╔╝  ██║██╔════╝')
+    print('██████╔╝█████╗░░█████╗░░██║░╚███╔╝░  ██║╚█████╗░')
+    print('██╔═══╝░██╔══╝░░██╔══╝░░██║░██╔██╗░  ██║░╚═══██╗')
+    print('██║░░░░░███████╗██║░░░░░██║██╔╝╚██╗  ██║██████╔╝')
+    print('╚═╝░░░░░╚══════╝╚═╝░░░░░╚═╝╚═╝░░╚═╝  ╚═╝╚═════╝░')
+    print('')
+    print('██╗  ░░░  ██╗')
+    print('╚█║  ░░░  ╚█║')
+    print('░╚╝  ░░░  ░╚╝')
+    print('░░░  ░░░  ░░░')
+    print('░░░  ██╗  ░░░')
+    print('░░░  ╚═╝  ░░░')
+    print('')
+    print('')
+    print('')
+    print('')
+    print('-----------------------------------------------------------------------')
+    print('')
+    print('WELCOME TO COMMAND CENTRE!-created by Di33le2 or DIZZY#0625 - ')
+    print('')
+    print('')
+    print('')
+    print('You have executed cmds; here are the available commands!')
+    print('')
+    print('main-')
+    print('')
+    print('credits:')
+    print('')
+    print('[DIZZY/dizzytheone] : Idea and made most of the code')
+    print('[AyItsWebs] : Gave us Anti-Crash script from his personal admin')
+    print('[xhbz/xorobf] : Made whitelist/unwhitelist Command')
+    print('[Tech#0700] : Made blue sword crash (osas/close2)')
+    print('[amorouslover/Aphere/Love/Trashy ass friend fr blocked me for no reason LMAO] : Prob skidded Blackout script. I edited')
+    print('[Scv2] perm script and playerlist')
+    print('')
+    print('')
+    print('(vcheck/versioncheck/version.check/v.check) gives you the version of zmod you are using')
+    print('(rj/rej/rejoin) rejoins the game')
+    print('(songs) prints the list of songs')
+    print('(tptool) gives you a tp tool that bypasses almost every game')
+    print('(change.logs) See the updates and what version you have-,-,-,-,-,-,-,-,-important')
+    print('(whatisthis) Tells you what you are using ig?')
+    print('')
+    print('Universal-')
+    print('')
+    print('PLS DM ME IM OUT OF IDEAS')
+    print('(cmds/cmd/cm/cmmds) gives you a list of commands')
+    print('(iy) loads IY admin')
+    print('(cmdx) loads CMD-X admin')
+    print('(fat) loads Fates Admin (recommended)')
+    print('(tptool) gives you a tp tool that bypasses almost every game')
+    print('(rj/rejoin/rej) rejoins the game')
+    print('(exe) loads a loadstring executor (custom)')
+    print('(portal) gives a client sided portal gun(fe)')
+    print('(change.logs) See the updates and what version you have')
+    print('(whatisthis) Tells you what you are using ig?')
+    print('(vcheck/v.check/versioncheck/version.check) Tells you the version')
+    print('(Songs)Prints all the songs available in this admin')
+    print('([songname].snip) plays the first 5 seconds of the song you have named')
+    print('')
+    print('-----------------------------------------------------------------------')
+    print('Kohls Admin House-')
+    print('')
+    print('(scv3old/shortcutv3.old) loads shortcutv3')
+    print('(cmdv1) loads cmd V1')
+    print('(cmdy) loads v2 version of cmdv1')
+    print('(Bender) loads bender by Aphere or amorouslover')
+    print('(craig) loads Craig admin by Jamie')
+    print('---------------------------------Crashes--------------------------------')
+    print('(close/crash) attempts to crash the server')
+    print('(osas/close2) currently broken fixes when version is released')
+    print('(crash2) legit advertises while crashing lol')
+    print('---------------------------------screen related-------------------------')
+    print('(blind.z) hurts ppls eyes may kill ppl im not even lying')
+    print('(themes) loads a list of themes that you can execute ingame')
+    print('(whiteout) blinds everyone with white')
+    print('------------------------------teleports---------------------------------')
+    print('(house) teleports to house')
+    print('------------------------------Usefull---------------------------------')
+    print('(nok) makes you not die to the kill bricks')
+    print('(equiptools) equips all tools')
+    print('(clean/hardfix) fixes everything')
+    print('(clrchat)clears chats with -')
+    print('(loopgrab/unloopgrab/lg/unlg) loopgrabs pads')
+    print('(antiabuse) stops punish,ice and jails')
+    print('(mega-antiabuse) makes the game really hard to crash and blocks almost everything with some exceptions')
+    print('(norc) breaks everyones right click and if they rejoin it puts them in shiftlock (use cmdy to fix[;fixcam])')
+    print('(voidp) gives you the gears to break the baseplate you can use (.fixvelocity) to make sure you dont die')
+    print('(fixvelocity/fixvelo) fixes ur velocity :P')
+    print('------------------------------random---------------------------------')
+    print('(tpm) Runs the cmd tp me me')
+    print('(ref) runs the command refresh me')
+    print('(Dizzy.cult) you know')
+    print('(kits) loads a list of kits you can execute in Kohls Admin House')
+    print('(megablaze) loads a laggy and loud sword')
+    print('(gigachad) load it i dare you tehee')
+    print('-----------------------------------------------------------------------')
+    print('Trolls-')
+    print('(grab.ip.server) makes ppl think ur taking there ip')
+    print('--------------------------Map Colors-----------------------------------')
+    print('use the command ([color]out)')
+    print('Colors-')
+    print('')
+    print('red')
+    print('green')
+    print('blue')
+    print('black')
+    print('white')
+    print('purple')
+    print('--------------------------special-----------------------------------')
+    print('announce command (announce [text])')
+    print('-------------------------ADVERTISE ME PLS------------------------------')
+    print('(close.2) spams chat with zmod discord server and crashes')
+    print('(adve) just spams chat with link')
+    print('(disc) says one link if ppl are interested')
+
+end
+
+local function executeLoadstring(loadstringCode)
+    local success, result = pcall(function()
+        return loadstring(loadstringCode)()
+    end)
+
+    if not success then
+        warn("Error executing loadstring:", result)
+    end
+end
+
+local function handleCommand(message)
+
+    local lowercaseMessage = string.lower(message)
+
+    if lowercaseMessage == ".cmds" or lowercaseMessage == ".cmd" or lowercaseMessage == ".cm" or lowercaseMessage == ".cmmds" then
+        executePrints()
+    end
+
+    if lowercaseMessage == ".iy" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source', true))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".cmdx" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".fat" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua', true))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".cmdv1" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/KAH/main/CMD%20v1.lua', true))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".cmdy" or lowercaseMessage == ".perm/c" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/KAH/main/CMD-Y%20(v1.56).lua', true))()"
+        executeLoadstring(loadstringCode)
+        
+elseif lowercaseMessage == ".house" then
+local Character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+	if Character then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-30.1969719, 8.22999954, 72.12043, -0.998412967, -2.57047859e-08, 0.0563161708, -2.74235497e-08, 1, -2.97470795e-08, -0.0563161708, -3.12442587e-08, -0.998412967)
+		end
+		
+		
+    elseif lowercaseMessage == ".spawn" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/exptable/spawn', true))()"
+        executeLoadstring(loadstringCode)		
+		
+		
+		
+    elseif lowercaseMessage == ".tptool" then
+        local tool = Instance.new("Tool")
+        tool.RequiresHandle = false
+        tool.Name = "Zmod.Tptool"
+        tool.Activated:Connect(function()
+            local mouse = game.Players.LocalPlayer:GetMouse()
+            local pos = mouse.Hit + Vector3.new(0, 2.5, 0)
+            pos = CFrame.new(pos.X, pos.Y, pos.Z)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+        end)
+        tool.Parent = game.Players.LocalPlayer.Backpack
+   elseif lowercaseMessage == ".rj"  or lowercaseMessage == ".rejoin" or lowercaseMessage == ".rej" then
+    local ts = game:GetService("TeleportService")
+    local p = game:GetService("Players").LocalPlayer
+
+    -- Get the current server place ID
+    local currentPlaceId = game.PlaceId
+    local currentJobId = game.JobId
+    
+
+    -- Teleport the player to the same server
+    ts:TeleportToPlaceInstance(currentPlaceId, currentJobId, p)
+    
+    
+    
+    elseif lowercaseMessage == ".shop" or lowercaseMessage == ".serverhop" then
+    
+        local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+
+module:Teleport(game.PlaceId)
+
+
+    elseif lowercaseMessage == ".craig" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/JamieCraigTucker/craigscript/main/craigscript', true))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".scv3old" or lowercaseMessage == ".scriptcutv3.old" then
+        local loadstringCode = "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/Old%20scv3'),true))()"
+        executeLoadstring(loadstringCode)
+       
+       --CRASHES
+       
+    elseif lowercaseMessage == ".close" or lowercaseMessage == ".crash" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+
+--vampire crash
+
+        -- Execute the Chat function with the desired commands
+        Chat("gear me 94794847")
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005216738441")
+        wait(0)
+        game.Players.LocalPlayer.Backpack:WaitForChild("VampireVanquisher").Parent = game.Players.LocalPlayer.Character
+        wait(0.5)
+        Chat("h \n\n\nThis server has crashed by Zmod dsc.gg/zirconia  \n\n\n")
+        Chat("punish others")
+        Chat("skydive others")
+        Chat("blind all")
+        wait(0.3)
+        Chat("size me .3")
+        Chat("size me .3")
+        Chat("size me .3")
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+-- advertise crash
+
+
+
+
+
+
+
+        -- Execute the Chat function with the desired commands
+        Chat("gear me 94794847")
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005216738441")
+        wait(0)
+        game.Players.LocalPlayer.Backpack:WaitForChild("VampireVanquisher").Parent = game.Players.LocalPlayer.Character
+        wait(0.5)
+        Chat("m/n/nCHECK CHAT./n/n/n")
+        Chat("punish others")
+        Chat("skydive others")
+        Chat("blind all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dsc.gg/zirconia", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dsc.gg/zirconia", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dsc.gg/zirconia", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dsc.gg/zirconia", "all")
+        wait(0.3)
+        Chat("size me .3")
+        Chat("size me .3")
+        Chat("size me .3")
+        
+
+
+elseif lowercaseMessage == "osas" or lowercaseMessage == "close2" or lowercaseMessage == ".crash2" then
+    game.Players:Chat("god all")
+    game.Players:Chat("freeze me")
+    wait(0.35)
+    game.Players:Chat("name me")
+    wait(0.35)
+    game.Players:Chat("thaw me")
+    wait()
+    game.Players:Chat("h This server has crashed by Zmod. dsc.gg/zirconia")
+    game.Players:Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005216738441")
+    game.Players:Chat("gear me 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000092628079")
+    wait(1)
+    for i, v in pairs(game.Players.LocalPlayer:FindFirstChildOfClass("Backpack"):GetChildren()) do
+        if v:IsA("Tool") or v:IsA("HopperBin") then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+    wait(0.51)
+    local Backpack = game.Players.LocalPlayer:FindFirstChildOfClass("Backpack")
+    for _, v in ipairs(Backpack:GetChildren()) do
+        v.Parent = game.Players.LocalPlayer.Character
+        v:Activate()
+    end
+    wait(0.35)
+    local VirtualUser = game:GetService("VirtualUser")
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton1(Vector2.new())
+    wait(0.39)
+    for i = 1, 2 do
+        game.Players:Chat("unsize me me me " .. math.random(1, 1000))
+    end
+    wait(1)
+    finished = true
+    task.spawn(function()
+        wait(2.5)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):UnequipTools()
+        wait(5)
+        finished = false
+        game.Players:Chat("respawn me")
+    end)
+    local StatsService = game:GetService("Stats")
+    local ping1 = string.split(StatsService.Network.ServerStatsItem["Data Ping"]:GetValueString(), " ")[1]
+    task.wait(0.4)
+    while finished do
+        task.wait(0.2)
+        local ping2 = string.split(StatsService.Network.ServerStatsItem["Data Ping"]:GetValueString(), " ")[1]
+        if ping2 ~= ping1 then
+            if ratelimit3 then return end
+            ratelimit3 = true
+            for i = 1, 2 do
+                if not finished then return end
+                game.Players:Chat("unsize me me me " .. math.random(1, 1000))
+            end
+            wait(0.49)
+            ratelimit3 = false
+            --finished = false
+        end
+    end
+
+
+
+
+
+
+
+        
+-------------------most prints
+        
+        
+    elseif lowercaseMessage == ".kits" then
+        print('')
+        print('')
+        print('-----------------------------------------------------------------------')
+        print('Kits-')
+        print('')
+        print('(evil.kit) loads a script that can kill a lot of things good')
+        print('(bt.kit) loads a script that gives you the power of Btools')
+        print('(vamp.kit) loads the VampireVanquisher')
+        print('(move.kit) loads the best tools move blocks(WIP)')
+        print('(sword.kit) loads the best swords (10)')
+        print('(fling.kit) loads the fling hammer set')
+        
+      
+      
+      
+elseif lowercaseMessage == ".equiptools" then
+-- Get the player and their tools
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Backpack = LocalPlayer:WaitForChild("Backpack")
+local Tools = Backpack:GetChildren()
+
+-- Equip all the tools
+for _, Tool in ipairs(Tools) do
+    if Tool:IsA("Tool") then
+        Tool.Parent = LocalPlayer.Character
+        wait() -- Give it some time to equip
+    end
+end
+
+
+
+      elseif lowercaseMessage == ".nok" then
+      for _, Bricks in pairs(game:GetService("Workspace").Terrain._Game.Workspace.Obby:GetChildren()) do
+                                          Bricks.CanTouch = false
+                                          end
+                                       
+      
+                
+    elseif lowercaseMessage == ".songs" then
+        print('')
+        print('')
+        print('-----------------------------------------------------------------------')
+        print('Songs-')
+        print('')
+        print('(earexpsong) plays bypassed music with swears very loud')
+        print('(goodvbssong) just generally the best song thats on roblox')
+        print('(randomsong) loads the most random song')
+        print('(sadhrssong) play sad n***a hours I cant say it bc im white!')
+        print('(barackbtbxsong) Barack obama beatboxing')
+        print('(newtanksong) No description')
+        print('(placetstysong) No description')
+        print('(bodysong) No description')
+        print('(emosong) use this to annoy the fuck out of tech :P [soz tech]')
+        
+        
+        
+        
+        
+            elseif lowercaseMessage == ".themes" then
+        print('')
+        print('')
+        print('-----------------------------------------------------------------------')
+        print('Themes-')
+        print('')
+        print('(theme1) loads a purple theme on the game')
+        print('(theme2) loads a light blue theme on the game')
+
+        
+        
+        
+        
+    elseif lowercaseMessage == ".change.logs" then
+        print('')
+        print('')
+        print('-----------------------------------------------------------------------')
+        print('Change logs-')
+        print('Current verison (0.2beta)')
+        print('')
+        print('clean or hardfix cmd')
+        print('Auto perm admin')
+        print('Many new commands')
+        print('gem song patched')
+        print('added some emo ass song lol')
+        print('new name is ziricon')
+        print('changed the text message load to a notification')
+        print('added .announce')
+        print('themes!')
+        print('nok  ! a powerful anti brick kill ')
+        print('added snippet ([song]snip)')
+        
+        elseif lowercaseMessage == ".whatisthis" then
+        print('')
+        print('')
+        print('-----------------------------------------------------------------------')
+        print('Name : Zmod')
+        print('Version : 0.2 beta')
+        print('Credits : dizzytheone or Di33le2/DIZZY')
+        print('This is Zmod created by dizzytheone I made this because I got bored lol')
+    
+    
+        elseif lowercaseMessage ==  ".vcheck" or lowercaseMessage == ".versioncheck" then
+    
+        wait(1)
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("You are currently using Version 0.2 of Zmod", "all")
+       
+       
+       
+
+
+
+ 
+
+
+
+    
+       elseif lowercaseMessage == ".grabipserver" then
+    
+        wait(1)
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Attempting to Grab location(ip) or all users in server", "all")
+       wait('2')
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Checking Bypasses.", "all")
+       wait('2')
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("executing dll on all users", "all")
+       wait('2')
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Ip's found.", "all")
+       wait('2')
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Leaking.", "all")
+       wait('2')
+              game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Leaking..", "all")
+              wait('1')
+                     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Leaking...", "all")
+                     wait('2')
+       game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("success", "all")
+
+    
+    
+        elseif lowercaseMessage == ".clean" or lowercaseMessage == ".hardfix" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+        -- Execute the Chat function with the desired commands
+        Chat("clr")
+        Chat("fix")
+        Chat("reset all")
+        Chat("unsize all")
+        Chat("speed all 16")
+        Chat("unblind all")
+        Chat("unpunish all")
+       
+       local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/fixcolors'))()"
+        executeLoadstring(loadstringCode)
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    elseif lowercaseMessage == ".evilkit" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+        -- Execute the Chat function with the desired commands
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000010468797")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000068539623")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000071037101")
+        Chat("ff me")
+        Chat("god me")
+        Chat("pm me EVIL KIT LOADED")
+    elseif lowercaseMessage == ".btkit" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+        -- Execute the Chat function with the desired commands
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000016200402")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000018474459")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000016969792")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000073089190")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000079446473")
+        Chat("pm me Loaded btools")
+        
+    elseif lowercaseMessage == ".vampkit" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+        -- Execute the Chat function with the desired commands
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000094794847")
+        Chat("god me")
+        Chat("ff me")
+
+        Chat("pm me Loaded vamp")
+
+    elseif lowercaseMessage == ".flingkit" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+        -- Execute the Chat function with the desired commands
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000045177979")
+        Chat("gear me 0000000000000000000000000000000000000000000000000000000000000115377964")
+        Chat("ff all")
+        Chat("god all")
+
+        Chat("pm me Loaded fling kit")
+        
+        
+        
+        
+
+    elseif lowercaseMessage == ".exe" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/ImUltik/Lisbon/main/Scripts/synternal.lua'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".portal" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/randomguy194/dollar-tree-portal-gun/main/budget%20portal%20gun.txt'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".swordkit" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("gear me 0000000000000000000000000000000000000000000000000000000000000159229806")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000093136802")
+        Chat("gear me 0000000000000000000000000000000000000000000000000000000000000108158379")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000073829193")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000069499437")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000080661504")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000099119240")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000068539623")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000071037101")
+        Chat("gear me 000000000000000000000000000000000000000000000000000000000000093136746")    
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    elseif lowercaseMessage == ".earexpsong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006695430066")
+ 
+ 
+     elseif lowercaseMessage == ".earexpsnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006695430066")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    elseif lowercaseMessage == ".goodvbssong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006872126938")
+        
+        
+             elseif lowercaseMessage == ".goodvbssnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        
+         
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006872126938")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+        
+        
+        
+    
+    elseif lowercaseMessage == ".randomsong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002042581436")
+
+
+     elseif lowercaseMessage == ".randomsnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002042581436")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+
+
+
+
+    elseif lowercaseMessage == ".placetstysong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006703926669")
+        
+             elseif lowercaseMessage == ".placetstysnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006703926669")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+        
+        
+        
+
+
+    elseif lowercaseMessage == ".sadhrssong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006806140478")
+        
+                     elseif lowercaseMessage == ".sadhrssnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006806140478")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+        
+        
+        
+
+
+
+
+
+    elseif lowercaseMessage == ".barackbtbxsong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005216738441")
+        
+                             elseif lowercaseMessage == ".barackbtbxsnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005216738441")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+        
+        
+        
+
+
+
+
+
+    elseif lowercaseMessage == ".elvsong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001837070127")
+        
+                                     elseif lowercaseMessage == ".elvsnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001837070127")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+        
+        
+        
+
+
+    elseif lowercaseMessage == ".bodysong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006673004638")
+
+
+                                     elseif lowercaseMessage == ".bodysnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006673004638")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+
+
+
+
+
+
+
+    elseif lowercaseMessage == ".newtanksong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006681840651")
+
+                                     elseif lowercaseMessage == ".newtanksnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006681840651")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+        
+        
+        
+        
+            elseif lowercaseMessage == ".emosong" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011808880515")
+
+                                     elseif lowercaseMessage == ".emosnip" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("music 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011808880515")
+        wait(1)
+        Chat("h [Zmod] : Snippet Playing...")
+        wait(10)
+
+        Chat("music 0")
+        Chat("h [Zmod] : Snippet has ended")
+        
+
+
+
+        
+
+
+        
+            elseif lowercaseMessage == ".gigachad" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("hat me 00000000000000000000000000000000000013291202300")
+
+
+
+
+
+
+
+
+
+
+
+
+    elseif lowercaseMessage == ".dizzycult" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("h DIZZY CULT ON TOP!!!!!!!")
+        Chat("m DIZZY CULT ON TOP!!!!!!!")
+        Chat("name all DIZZY CULT ON TOP!!!!!!!")
+        Chat("paint all green")
+        Chat("trail all green")
+        Chat("bighead all")
+
+
+
+
+    elseif lowercaseMessage == ".blindflash" then
+       local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        
+        Chat("fogend 0")
+        Chat("flash")
+        Chat("brightness 100")
+        Chat("outdoorambient 255,255,255")
+
+
+
+
+
+
+    
+    
+    
+    elseif lowercaseMessage == ".tpm" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+        -- Execute the Chat function the desired commands
+        Chat("tp me me")
+        
+        
+        
+            elseif lowercaseMessage == ".ref" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+        -- Execute the Chat function the desired commands
+        Chat("reset me")
+        
+
+               
+
+
+
+
+
+
+-- Assuming you already have the lowercaseMessage and handleMessage defined
+
+-- Assuming you have a way to receive and handle messages
+ -- Replace with the actual received message
+
+               
+               
+
+               
+
+    
+ 
+ 
+ 
+ 
+         
+                    elseif lowercaseMessage == ".disc" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        wait(1)
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("JOIN THE ZMOD SERVER dsc.gg/5gShAQvmU", "all")
+                
+                
+                
+                
+                
+           elseif lowercaseMessage == ".adve" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        wait(1)
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("JOIN THE ZMOD SERVER dsc.gg/5gShAQvmU", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("JOIN THE ZMOD SERVER dsc.gg/5gShAQvmU", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("JOIN THE ZMOD SERVER dsc.gg/5gShAQvmU", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("JOIN THE ZMOD SERVER dsc.gg/5gShAQvmU", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("JOIN THE ZMOD SERVER dsc.gg/5gShAQvmU", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("JOIN THE ZMOD SERVER dsc.gg/5gShAQvmU", "all")
+
+        
+        
+        
+        
+                   elseif lowercaseMessage == ".clrchat" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+        wait(1)
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("-", "all")
+
+
+        
+        
+        
+                           elseif lowercaseMessage == ".megablaze" then
+                                 local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/mega.blaze'))()"
+                                 executeLoadstring(loadstringCode)
+                                 
+                                 
+                           elseif lowercaseMessage == ".manyexptable" or lowercaseMessage == ".exptable" then
+local loadstringCode1 = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/exptable/gears', true))()"
+local loadstringCode2 = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/exptable/use', true))()"
+
+loadstring(loadstringCode1)()
+wait(0.5)
+loadstring(loadstringCode2)()
+
+
+                                 
+                                                            elseif lowercaseMessage == ".keystrokeui" then
+                                 local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/Keystroke%20V1.2%20Deobfusticated.txt'))()"
+                                 executeLoadstring(loadstringCode)
+        
+        
+        
+        
+        
+ 
+                     elseif lowercaseMessage == ".theme1" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+ 
+ 
+Chat("fogend 400")
+Chat("colorshifttop 400 0 600")
+Chat("fogcolor 10 200 400")
+
+        
+        
+        
+        
+                             elseif lowercaseMessage == ".theme2" then
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+ 
+ 
+Chat("fogend 350")
+Chat("colorshifttop 350 0 700")
+Chat("fogcolor 0 400 500")
+
+        
+        
+    elseif lowercaseMessage == ".bender" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/bender'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".whiteout" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/Whiteout'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".redout" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/Outs/redout'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".greenout" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/Outs/greenout'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".blueout" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/Outs/blueout'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".blackout" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/Outs/blackout'))()"
+        executeLoadstring(loadstringCode)
+    elseif lowercaseMessage == ".purpleout" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/Outs/purpleout'))()"
+        executeLoadstring(loadstringCode)
+        
+        
+    elseif lowercaseMessage == ".fixcolor" or lowercaseMessage == ".colorfix" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/fixcolors'))()"
+        executeLoadstring(loadstringCode)
+        
+     elseif lowercaseMessage == ".test" or lowercaseMessage == ".twest" then       
+        
+        
+        
+local function activateItems(speaker, args)
+	local Backpack = speaker:FindFirstChildOfClass("Backpack")
+	local amount = tonumber(args[1]) or 1
+	local delayEnabled = args[2] and args[2]:lower() == "true" or false
+
+	for _, v in ipairs(Backpack:GetChildren()) do
+		v.Parent = speaker.Character
+		task.spawn(function()
+			for _ = 1, amount do
+				v:Activate()
+				if delayEnabled then
+					wait(0.1)
+				end
+			end
+			v.Parent = Backpack
+		end)
+	end
+end
+
+
+activateItems(game.Players.LocalPlayer, {3, "true"})
+
+        
+        
+        
+    elseif lowercaseMessage == ".anticrash" or lowercaseMessage == ".antivg" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/Anti%20VG'))()"
+        executeLoadstring(loadstringCode)
+        
+ 
+        
+        
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        ----anti cheat/abuse/crash
+        
+        
+        
+          elseif lowercaseMessage == ".antiabuse" or lowercaseMessage == ".protect/zmod" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/anti%20abuse'))()"
+        executeLoadstring(loadstringCode)
+        
+        
+elseif lowercaseMessage == ".fixvelocity" or lowercaseMessage == ".fixvelo" then     
+    local mapFolder = game:GetService("Workspace").Terrain._Game.Workspace
+    for _, v in pairs(mapFolder:GetDescendants()) do
+        task.spawn(function()
+            if v:IsA("Part") then
+                v.Velocity = Vector3.new(0, 0, 0)
+            else
+                --
+            end
+        end)
+    end
+
+
+ elseif lowercaseMessage == ".voidp" then
+
+       local function Chat(msg)
+
+            game.Players:Chat(msg)
+        end
+   
+Chat("gear me 00000000000000000000000000000000000000000000000287426148")
+Chat("gear me 000000000000000000000000000000000000000000119917513")
+Chat("gear me 00000000000000000000000000000000000000000074385399")
+
+
+elseif lowercaseMessage == ".norc" then
+       local function Chat(msg)
+
+            game.Players:Chat(msg)
+        end
+        Chat("ph me Press Right Click and Everyone joined to the server will be broken! also use cmd y to fix ur cam(;fixcam)")
+game.Players:Chat("gear me 0000000000000000004842207161")
+        
+        
+        
+        
+        
+        
+        
+        
+            elseif lowercaseMessage == ".mega-antiabuse" or lowercaseMessage == ".megaserverprotect" then
+        local loadstringCode = "loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/mega%20anti%20abuse'))()"
+        executeLoadstring(loadstringCode)      
+        
+        
+        end
+        end
+
+
+
+
+
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local StarterGui = game:GetService("StarterGui")
+
+local playerName = Players.LocalPlayer.Name
+local playerRank = "Member" -- default rank
+
+-- Check the player's username and set the rank accordingly
+if playerName == "Di33le2" then
+    playerRank = "Owner"
+elseif playerName == "tpskingbrotha" or playerName == "xorobf" then
+    playerRank = "Powerful admin"
+elseif playerName == "nooneyte0wyfiushiourfihrsfiuhrfjrsofofrhfhreufhrufhrfhruhfuf" then
+    playerRank = "Mod"
+elseif playerName == "idonthacklol101ns" then
+    playerRank = "Developer"
+elseif playerName == "ZmodOnTop" then
+    playerRank = "Advertiser"
+elseif playerName == "FlyingGorilla936456" or playerName == "Altsarecooleh" then
+    playerRank = "beta tester"
+end
+
+local welcomeMessage = "Zirconia/Zmod Loaded. Welcome, " .. playerName .. "! Your rank is " .. playerRank .. ". Say cmds to get started. And join the server dsc.gg/5gShAQvmU"
+
+-- Create a notification using StarterGui
+StarterGui:SetCore("SendNotification", {
+    Title = "Welcome to the game!";
+    Text = welcomeMessage;
+    Duration = 5; -- Set the duration in seconds
+})
+
+-- Optionally, you can also print the welcome message in the output for debugging purposes
+print(welcomeMessage)
+
+
+
+
+
+
+
+
+
+
+
+
+game.Players.LocalPlayer.Chatted:Connect(handleCommand)
+
+
+
+
+
+
+
+
+
+-- Whitelisted usernames
+local whitelist = {
+    "Joeyplayzgame_stoiu",
+    "Di33le2",
+    "tpskingbrotha",
+    "Unlocsir",
+    "Pikachu12342334",
+    "idonthacklol101ns",
+    "SBSJDBSJDGDB",
+    "xorobf",
+    "ZmodOnTop",
+    "krnltestXD",
+    "FlyingGorilla936456",
+    "Altsarecooleh",
+    "Me_LScriptLOL"
+    
+    
+    
+    
+
+}
+
+local function checkWhitelist()
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        local playerName = player.Name
+        local isWhitelisted = false
+
+        for _, whitelistedName in ipairs(whitelist) do
+            if playerName == whitelistedName then
+                isWhitelisted = true
+                break
+            end
+        end
+
+        if not isWhitelisted then
+            player:Kick("You are not whitelisted. please reframe from using this script. (me rn (      >:(     )")
+        end
+    end
+end
+
+while true do
+    checkWhitelist()
+    wait(1) -- Adjust the interval (in seconds) between each whitelist check
+end
+
+
+
+
+
+
