@@ -1,3 +1,8 @@
+
+wait(5)
+
+
+
 local loopgrabEnabled = false
 
 local function LoopGrabPads()
