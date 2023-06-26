@@ -26,16 +26,19 @@ end
 game.Players.LocalPlayer.Chatted:Connect(function(message)
     local lowerMessage = message:lower()
     
-    if lowerMessage == ".loopgrab" or lowerMessage ".lg" then
+    if lowerMessage == ".loopgrab" or lowerMessage == ".lg" then
         loopgrabEnabled = true
         print("Loopgrab enabled.")
-    elseif lowerMessage == ".unloopgrab" or lowerMessage ".unlg" then
+    elseif lowerMessage == ".unloopgrab" or lowerMessage == ".unlg" then
         loopgrabEnabled = false
         print("Loopgrab disabled.")
     end
 end)
 
-while true do
-    LoopGrabPads()
-    wait(0.001)
-end
+coroutine.wrap(function()
+    while true do
+        LoopGrabPads()
+        wait(0.001)
+    end
+end)()
+
