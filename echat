@@ -1,0 +1,216 @@
+       
+           elseif lowercaseMessage == ".chatgpt" then
+    -- Made by Jotunn
+
+--[[ How this script works - it uses OpenAI to generate a response to any player's 
+text within a certain radius, pretty much ChatGPT but through roblox text? can't simply it much more then that ]]--
+
+-- for the script to work, you have to go to the link and generate a key, put it in SECRET_KEY
+-- any other problems feel free to dm 
+
+
+local SECRET_KEY = "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" --https://beta.openai.com/account/api-keys
+local Maximum_Studs = 20 -- how far players have to be for bot to respond
+local ainame = "chatGPT" -- feel free to change the name to your liking
+
+--// DON'T EDIT ANYTHING UNDER HERE \\--
+
+shared.hint = false
+shared.sans = false
+
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("[-] "..ainame.." at your service, How may I help you?", "All")
+function consolesans(text)
+    if shared.sans then
+        if not shared.fastforward then
+            local sans = {}
+            for letter in text:gmatch(".") do
+                if letter ~= "\r" and letter ~= "\n" then
+                    table.insert(sans, letter)
+                end
+            end
+
+            for i, v in ipairs(sans) do
+                wait(0.07)
+                rconsoleprint(v)
+            end
+            rconsoleprint("\n")
+        else
+            rconsoleprint(text)
+            rconsoleprint("\n")
+            wait()
+        end
+    else
+        if not shared.hint then
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
+        else
+            game.Players:Chat(
+                "Guys I don't know why but the BOT SAID SOMETHING THAT IS TAGGED DO YOU BELIEVE IT like fr you'd think a business model would never make such mistakes \n\n\n\n\n\n" ..
+                    ("\n"):rep(math.random(1, 34)) .. text
+            )
+        end
+    end
+end
+
+-- Chat bot below
+
+repeat
+    wait()
+until game:IsLoaded()
+
+-- // SETTINGS \\ --
+
+
+local CLOSE_RANGE_ONLY = true
+
+_G.MESSAGE_SETTINGS = {
+    ["MINIMUM_CHARACTERS"] = 2,
+    ["MAXIMUM_CHARACTERS"] = 1000,
+    ["MAXIMUM_STUDS"] = Maximum_Studs
+}
+
+_G.WHITELISTED = {
+    --Only works if CLOSE_RANGE_ONLY is disabled
+    ["Exprvssed"] = true
+}
+
+_G.BLACKLISTED = {
+    --Only works if CLOSE_RANGE_ONLY is enabled
+    [game.Players.LocalPlayer.Name] = true
+}
+
+
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+local LocalPlayer = Players.LocalPlayer
+local SayMessageRequest =
+    ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local OnMessageDoneFiltering =
+    ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local Debounce = false
+
+local RequestFunctiom = syn and syn.request or request or http.request or Fluxus.request
+
+local function MakeRequest(Prompt)
+    return RequestFunctiom(
+        {
+            Url = "https://api.openai.com/v1/completions",
+            Method = "POST",
+            Headers = {
+                ["Content-Type"] = "application/json",
+                ["Authorization"] = "Bearer " .. SECRET_KEY
+            },
+            Body = HttpService:JSONEncode(
+                {
+                    model = "text-davinci-003",
+                    prompt = Prompt,
+                    temperature = 0.9,
+                    max_tokens = 45, --150
+                    top_p = 1,
+                    frequency_penalty = 0.0,
+                    presence_penalty = 0.6,
+                    stop = {" Human:", " AI:"}
+                }
+            )
+        }
+    )
+end
+
+OnMessageDoneFiltering.OnClientEvent:Connect(
+    function(Table)
+        local Message, Instance = Table.Message, Players:FindFirstChild(Table.FromSpeaker)
+        local Character = Instance and Instance.Character
+
+        if Instance == string.match(Message, "#") or not Character or not Character:FindFirstChild("Head") then
+            return
+        end
+        if
+            Debounce or #Message < _G.MESSAGE_SETTINGS["MINIMUM_CHARACTERS"] or
+                #Message > _G.MESSAGE_SETTINGS["MAXIMUM_CHARACTERS"]
+         then
+            return
+        end
+        if CLOSE_RANGE_ONLY then
+            if
+                _G.BLACKLISTED[Instance.Name] or
+                    (Character.Head.Position - LocalPlayer.Character.Head.Position).Magnitude >
+                        _G.MESSAGE_SETTINGS["MAXIMUM_STUDS"]
+             then
+                return
+            end
+        elseif not _G.WHITELISTED[Instance.Name] then
+            return
+        end
+
+        Debounce = true
+
+        local HttpRequest = MakeRequest("Human: " .. Message .. "\n\nAI:")
+        local Response =
+            ainame ..
+            " replying to " ..
+                Instance.DisplayName ..
+                    " >>> " .. string.sub(HttpService:JSONDecode(HttpRequest["Body"]).choices[1].text, 2)
+
+        if #Response < 150 then --200
+            consolesans(Response)
+            wait(.49)
+            Debounce = false
+        else
+            --warn("Response (> 128): " .. Response);
+            if #Response - 150 < 150 then
+                consolesans(string.sub(Response, 1, 150), "All")
+                delay(
+                    3,
+                    function()
+                        consolesans(string.sub(Response, 151), "All")
+                        wait(.49)
+                        Debounce = false
+                    end
+                )
+            else
+                local file = "I want to have fun"
+                local a = {}
+
+                for letter in file:gmatch(".") do
+                    if letter ~= "\r" and letter ~= "\n" then
+                        table.insert(a, letter)
+                    end
+                end
+
+                for i, v in ipairs(a) do
+                    print(i, v)
+                end
+
+                for b, c in ipairs(a) do
+                    local d = "variable_" .. tostring(b)
+                    _G[d] = c
+                end
+                for b, c in ipairs(a) do
+                    local e = string.rep("  ", 2 * (b - 1))
+                    game.Players:Chat(
+                        "h Do not say fun\n\n\n\n\n\n\n" .. e .. _G["variable_" .. tostring(b)]
+                    )
+                end
+                wait(2.5)
+                Debounce = false
+            end
+        end
+    end
+)
+print(
+    "AI chat script loaded. To use commands silently just whisper words to \n yourself by typing /w " ..
+        game.Players.LocalPlayer.Name .. " in the chat and then hitting enter"
+)
+
+
+        local function Chat(msg)
+            game.Players:Chat(msg)
+        end
+
+
+task.wait(0.25)
+Chat("name me Chatgpt")
+Chat("ff me")
+Chat("god me")
+    
