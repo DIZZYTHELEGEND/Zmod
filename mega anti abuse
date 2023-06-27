@@ -14,5 +14,5 @@ while true do
 
     Chat("unflash")
     Chat("h SERVER IS PROTECTED BY ZMOD")
-    wait(1)
+    wait(0.00001)
 end
