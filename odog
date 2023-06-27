@@ -1,0 +1,14 @@
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 5) == ".odog" then
+        local text = string.sub(msg, 7)
+        for i = 1, 100 do
+            game.Players:Chat("dog "..text)
+            wait(0.01)
+        end
+        game.Players:Chat("freeze "..text)
+        game.Players:Chat("rainbowify "..text)
+        game.Players:Chat("unfreeze "..text)
+        wait(2)
+        game.Players:Chat("explode "..text)
+    end
+end)
