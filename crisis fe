@@ -1,0 +1,5525 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local Crisisfe = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local MenuFrame = Instance.new("Frame")
+local Backgrounds = Instance.new("TextButton")
+local Background = Instance.new("Frame")
+local CornerRadius = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
+local bgframe = Instance.new("Frame")
+local Bloodsbg = Instance.new("TextButton")
+local Background_2 = Instance.new("Frame")
+local CornerRadius_2 = Instance.new("UICorner")
+local thunderbg = Instance.new("TextButton")
+local Background_3 = Instance.new("Frame")
+local CornerRadius_3 = Instance.new("UICorner")
+local animeop = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local Background_4 = Instance.new("Frame")
+local CornerRadius_4 = Instance.new("UICorner")
+local ImageButton_2 = Instance.new("ImageButton")
+local Background_5 = Instance.new("Frame")
+local CornerRadius_5 = Instance.new("UICorner")
+local ImageButton_3 = Instance.new("ImageButton")
+local Background_6 = Instance.new("Frame")
+local CornerRadius_6 = Instance.new("UICorner")
+local ImageButton_4 = Instance.new("ImageButton")
+local Background_7 = Instance.new("Frame")
+local CornerRadius_7 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Animebg = Instance.new("TextButton")
+local Background_8 = Instance.new("Frame")
+local CornerRadius_8 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Scriptgui = Instance.new("Frame")
+local Search = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local Frame = Instance.new("Frame")
+local infiniteyeild = Instance.new("TextButton")
+local Background_9 = Instance.new("Frame")
+local CornerRadius_9 = Instance.new("UICorner")
+local cmdx = Instance.new("TextButton")
+local Background_10 = Instance.new("Frame")
+local CornerRadius_10 = Instance.new("UICorner")
+local fatesadmin = Instance.new("TextButton")
+local Background_11 = Instance.new("Frame")
+local CornerRadius_11 = Instance.new("UICorner")
+local tigeradmin = Instance.new("TextButton")
+local Background_12 = Instance.new("Frame")
+local CornerRadius_12 = Instance.new("UICorner")
+local agent = Instance.new("TextButton")
+local Background_13 = Instance.new("Frame")
+local CornerRadius_13 = Instance.new("UICorner")
+local spacex = Instance.new("TextButton")
+local Background_14 = Instance.new("Frame")
+local CornerRadius_14 = Instance.new("UICorner")
+local blazex = Instance.new("TextButton")
+local Background_15 = Instance.new("Frame")
+local CornerRadius_15 = Instance.new("UICorner")
+local vapev4 = Instance.new("TextButton")
+local Background_16 = Instance.new("Frame")
+local CornerRadius_16 = Instance.new("UICorner")
+local shortcutv3 = Instance.new("TextButton")
+local Background_17 = Instance.new("Frame")
+local CornerRadius_17 = Instance.new("UICorner")
+local owlhub = Instance.new("TextButton")
+local Background_18 = Instance.new("Frame")
+local CornerRadius_18 = Instance.new("UICorner")
+local cmdy = Instance.new("TextButton")
+local Background_19 = Instance.new("Frame")
+local CornerRadius_19 = Instance.new("UICorner")
+local backdoorexe = Instance.new("TextButton")
+local Background_20 = Instance.new("Frame")
+local CornerRadius_20 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local Background_21 = Instance.new("Frame")
+local CornerRadius_21 = Instance.new("UICorner")
+local universalhub = Instance.new("TextButton")
+local Background_22 = Instance.new("Frame")
+local CornerRadius_22 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local executor = Instance.new("ScrollingFrame")
+local code_box = Instance.new("TextBox")
+local Comments_ = Instance.new("TextLabel")
+local Globals_ = Instance.new("TextLabel")
+local Keywords_ = Instance.new("TextLabel")
+local Numbers_ = Instance.new("TextLabel")
+local Properties_ = Instance.new("TextLabel")
+local RemoteHighlight_ = Instance.new("TextLabel")
+local Security_ = Instance.new("TextLabel")
+local Strings_ = Instance.new("TextLabel")
+local Strings_2 = Instance.new("TextLabel")
+local Booleans_ = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UICorner_6 = Instance.new("UICorner")
+local Tokens_ = Instance.new("TextLabel")
+local lines = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UICorner_8 = Instance.new("UICorner")
+local randomthingy = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Options = Instance.new("ImageButton")
+local Clear = Instance.new("TextButton")
+local Background_23 = Instance.new("Frame")
+local CornerRadius_23 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local Background_24 = Instance.new("Frame")
+local CornerRadius_24 = Instance.new("UICorner")
+local Scripts = Instance.new("TextButton")
+local Background_25 = Instance.new("Frame")
+local CornerRadius_25 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Backgrounds_2 = Instance.new("Folder")
+local bloody = Instance.new("ImageLabel")
+local MrThundee = Instance.new("ImageLabel")
+local Animeshit = Instance.new("Folder")
+local Anim2 = Instance.new("ImageLabel")
+local Anim3 = Instance.new("ImageLabel")
+local Anim4 = Instance.new("ImageLabel")
+local Anim1 = Instance.new("ImageLabel")
+local credsfrME = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local credbutton = Instance.new("TextButton")
+local Background_26 = Instance.new("Frame")
+local CornerRadius_26 = Instance.new("UICorner")
+
+-- Properties
+
+Crisisfe.Name = "Crisisfe"
+Crisisfe.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Crisisfe.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Crisisfe.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = Crisisfe
+Main.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+Main.Position = UDim2.new(0.199237317, 0, 0.250183135, 0)
+Main.Size = UDim2.new(0, 285, 0, 207)
+
+MenuFrame.Name = "MenuFrame"
+MenuFrame.Parent = Main
+MenuFrame.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+MenuFrame.Position = UDim2.new(1.05581403, 0, -1.47427912e-07, 0)
+MenuFrame.Size = UDim2.new(0, 70, 0, 208)
+MenuFrame.Visible = false
+
+Backgrounds.Name = "Backgrounds"
+Backgrounds.Parent = MenuFrame
+Backgrounds.BackgroundColor3 = Color3.new(1, 1, 1)
+Backgrounds.BackgroundTransparency = 1
+Backgrounds.BorderSizePixel = 0
+Backgrounds.Position = UDim2.new(0.0959533677, 0, 0.179185137, 0)
+Backgrounds.Size = UDim2.new(0, 60, 0, 16)
+Backgrounds.Font = Enum.Font.SourceSans
+Backgrounds.Text = "Background"
+Backgrounds.TextColor3 = Color3.new(1, 1, 1)
+Backgrounds.TextSize = 10
+
+Background.Name = "Background"
+Background.Parent = Backgrounds
+Background.AnchorPoint = Vector2.new(0.5, 0.5)
+Background.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background.BackgroundTransparency = 1
+Background.ClipsDescendants = true
+Background.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius.Name = "CornerRadius"
+CornerRadius.Parent = Background
+CornerRadius.CornerRadius = UDim.new(0, 4)
+
+UICorner.Parent = MenuFrame
+UICorner.CornerRadius = UDim.new(0, 4)
+
+bgframe.Name = "bgframe"
+bgframe.Parent = Main
+bgframe.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+bgframe.Position = UDim2.new(-0.00701754401, 0, -0.266833246, 0)
+bgframe.Size = UDim2.new(0, 288, 0, 45)
+bgframe.Visible = false
+
+Bloodsbg.Name = "Bloodsbg"
+Bloodsbg.Parent = bgframe
+Bloodsbg.BackgroundColor3 = Color3.new(1, 1, 1)
+Bloodsbg.BackgroundTransparency = 1
+Bloodsbg.BorderSizePixel = 0
+Bloodsbg.Position = UDim2.new(0.0338703766, 0, 0.140743673, 0)
+Bloodsbg.Size = UDim2.new(0, 70, 0, 15)
+Bloodsbg.Font = Enum.Font.SourceSans
+Bloodsbg.Text = "Blood Background"
+Bloodsbg.TextColor3 = Color3.new(1, 1, 1)
+Bloodsbg.TextSize = 10
+
+Background_2.Name = "Background"
+Background_2.Parent = Bloodsbg
+Background_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_2.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_2.BackgroundTransparency = 1
+Background_2.ClipsDescendants = true
+Background_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_2.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_2.Name = "CornerRadius"
+CornerRadius_2.Parent = Background_2
+CornerRadius_2.CornerRadius = UDim.new(0, 4)
+
+thunderbg.Name = "thunderbg"
+thunderbg.Parent = bgframe
+thunderbg.BackgroundColor3 = Color3.new(1, 1, 1)
+thunderbg.BackgroundTransparency = 1
+thunderbg.BorderSizePixel = 0
+thunderbg.Position = UDim2.new(0.412375063, 0, 0.140743673, 0)
+thunderbg.Size = UDim2.new(0, 39, 0, 15)
+thunderbg.Font = Enum.Font.SourceSans
+thunderbg.Text = "Thunder"
+thunderbg.TextColor3 = Color3.new(1, 1, 1)
+thunderbg.TextSize = 10
+
+Background_3.Name = "Background"
+Background_3.Parent = thunderbg
+Background_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_3.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_3.BackgroundTransparency = 1
+Background_3.ClipsDescendants = true
+Background_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_3.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_3.Name = "CornerRadius"
+CornerRadius_3.Parent = Background_3
+CornerRadius_3.CornerRadius = UDim.new(0, 4)
+
+animeop.Name = "animeop"
+animeop.Parent = bgframe
+animeop.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+animeop.Position = UDim2.new(-0.0343978703, 0, -2.31111145, 0)
+animeop.Size = UDim2.new(0, 306, 0, 95)
+animeop.Visible = false
+
+TextLabel.Parent = animeop
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(0, 306, 0, 20)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Options"
+TextLabel.TextColor3 = Color3.new(1, 0, 0)
+TextLabel.TextSize = 14
+
+ImageButton.Parent = animeop
+ImageButton.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton.Position = UDim2.new(0.506238759, 0, 0.294736922, 0)
+ImageButton.Size = UDim2.new(0, 63, 0, 60)
+ImageButton.Image = "http://www.roblox.com/asset/?id=11902680303"
+
+Background_4.Name = "Background"
+Background_4.Parent = ImageButton
+Background_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_4.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_4.BackgroundTransparency = 1
+Background_4.ClipsDescendants = true
+Background_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_4.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_4.Name = "CornerRadius"
+CornerRadius_4.Parent = Background_4
+CornerRadius_4.CornerRadius = UDim.new(0, 4)
+
+ImageButton_2.Parent = animeop
+ImageButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_2.Position = UDim2.new(0.290552467, 0, 0.294736892, 0)
+ImageButton_2.Size = UDim2.new(0, 63, 0, 60)
+ImageButton_2.Image = "http://www.roblox.com/asset/?id=6675147486"
+
+Background_5.Name = "Background"
+Background_5.Parent = ImageButton_2
+Background_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_5.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_5.BackgroundTransparency = 1
+Background_5.ClipsDescendants = true
+Background_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_5.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_5.Name = "CornerRadius"
+CornerRadius_5.Parent = Background_5
+CornerRadius_5.CornerRadius = UDim.new(0, 4)
+
+ImageButton_3.Parent = animeop
+ImageButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_3.Position = UDim2.new(0.733868122, 0, 0.294736952, 0)
+ImageButton_3.Size = UDim2.new(0, 63, 0, 60)
+ImageButton_3.Image = "http://www.roblox.com/asset/?id=12461003274"
+
+Background_6.Name = "Background"
+Background_6.Parent = ImageButton_3
+Background_6.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_6.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_6.BackgroundTransparency = 1
+Background_6.ClipsDescendants = true
+Background_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_6.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_6.Name = "CornerRadius"
+CornerRadius_6.Parent = Background_6
+CornerRadius_6.CornerRadius = UDim.new(0, 4)
+
+ImageButton_4.Parent = animeop
+ImageButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_4.Position = UDim2.new(0.0606654547, 0, 0.294736922, 0)
+ImageButton_4.Size = UDim2.new(0, 63, 0, 60)
+ImageButton_4.Image = "http://www.roblox.com/asset/?id=11778372908"
+
+Background_7.Name = "Background"
+Background_7.Parent = ImageButton_4
+Background_7.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_7.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_7.BackgroundTransparency = 1
+Background_7.ClipsDescendants = true
+Background_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_7.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_7.Name = "CornerRadius"
+CornerRadius_7.Parent = Background_7
+CornerRadius_7.CornerRadius = UDim.new(0, 4)
+
+UICorner_2.Parent = animeop
+UICorner_2.CornerRadius = UDim.new(0, 4)
+
+Animebg.Name = "Animebg"
+Animebg.Parent = bgframe
+Animebg.BackgroundColor3 = Color3.new(1, 1, 1)
+Animebg.BackgroundTransparency = 1
+Animebg.BorderSizePixel = 0
+Animebg.Position = UDim2.new(0.66003859, 0, 0.140743673, 0)
+Animebg.Size = UDim2.new(0, 71, 0, 15)
+Animebg.Font = Enum.Font.SourceSans
+Animebg.Text = "Anime dweeb 4 pics"
+Animebg.TextColor3 = Color3.new(1, 1, 1)
+Animebg.TextSize = 10
+
+Background_8.Name = "Background"
+Background_8.Parent = Animebg
+Background_8.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_8.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_8.BackgroundTransparency = 1
+Background_8.ClipsDescendants = true
+Background_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_8.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_8.Name = "CornerRadius"
+CornerRadius_8.Parent = Background_8
+CornerRadius_8.CornerRadius = UDim.new(0, 4)
+
+UICorner_3.Parent = bgframe
+UICorner_3.CornerRadius = UDim.new(0, 4)
+
+Scriptgui.Name = "Scriptgui"
+Scriptgui.Parent = Main
+Scriptgui.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+Scriptgui.Position = UDim2.new(-0.371929824, 0, 0, 0)
+Scriptgui.Size = UDim2.new(0, 100, 0, 207)
+Scriptgui.Visible = false
+
+Search.Name = "Search"
+Search.Parent = Scriptgui
+Search.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+Search.BorderSizePixel = 0
+Search.Position = UDim2.new(0, 0, -0.00268052518, 0)
+Search.Size = UDim2.new(0, 100, 0, 25)
+Search.Font = Enum.Font.Highway
+Search.PlaceholderColor3 = Color3.new(0.564706, 0, 0)
+Search.PlaceholderText = "Search..."
+Search.Text = ""
+Search.TextColor3 = Color3.new(1, 0, 0)
+Search.TextSize = 10
+Search.TextWrapped = true
+
+UICorner_4.Parent = Search
+UICorner_4.CornerRadius = UDim.new(0, 4)
+
+ScrollingFrame.Parent = Scriptgui
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.149758458, 0)
+ScrollingFrame.Size = UDim2.new(0, 100, 0, 176)
+ScrollingFrame.ScrollBarThickness = 2
+ScrollingFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 4)
+
+Frame.Parent = ScrollingFrame
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BackgroundTransparency = 1
+Frame.Position = UDim2.new(0.319999993, 0, 0, 0)
+Frame.Size = UDim2.new(0, 36, 0, 11)
+
+infiniteyeild.Name = "infiniteyeild"
+infiniteyeild.Parent = ScrollingFrame
+infiniteyeild.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+infiniteyeild.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+infiniteyeild.Size = UDim2.new(0, 90, 0, 14)
+infiniteyeild.Font = Enum.Font.SourceSans
+infiniteyeild.Text = "Infinite Yeild(Admin)"
+infiniteyeild.TextColor3 = Color3.new(1, 0, 0.0156863)
+infiniteyeild.TextSize = 12
+
+Background_9.Name = "Background"
+Background_9.Parent = infiniteyeild
+Background_9.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_9.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_9.BackgroundTransparency = 1
+Background_9.ClipsDescendants = true
+Background_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_9.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_9.Name = "CornerRadius"
+CornerRadius_9.Parent = Background_9
+CornerRadius_9.CornerRadius = UDim.new(0, 4)
+
+cmdx.Name = "cmdx"
+cmdx.Parent = ScrollingFrame
+cmdx.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+cmdx.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+cmdx.Size = UDim2.new(0, 90, 0, 14)
+cmdx.Font = Enum.Font.SourceSans
+cmdx.Text = "CMD x (Admin)"
+cmdx.TextColor3 = Color3.new(1, 0, 0.0156863)
+cmdx.TextSize = 14
+
+Background_10.Name = "Background"
+Background_10.Parent = cmdx
+Background_10.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_10.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_10.BackgroundTransparency = 1
+Background_10.ClipsDescendants = true
+Background_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_10.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_10.Name = "CornerRadius"
+CornerRadius_10.Parent = Background_10
+CornerRadius_10.CornerRadius = UDim.new(0, 4)
+
+fatesadmin.Name = "fatesadmin"
+fatesadmin.Parent = ScrollingFrame
+fatesadmin.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+fatesadmin.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+fatesadmin.Size = UDim2.new(0, 90, 0, 14)
+fatesadmin.Font = Enum.Font.SourceSans
+fatesadmin.Text = "Fates Admin"
+fatesadmin.TextColor3 = Color3.new(1, 0, 0.0156863)
+fatesadmin.TextSize = 14
+
+Background_11.Name = "Background"
+Background_11.Parent = fatesadmin
+Background_11.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_11.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_11.BackgroundTransparency = 1
+Background_11.ClipsDescendants = true
+Background_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_11.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_11.Name = "CornerRadius"
+CornerRadius_11.Parent = Background_11
+CornerRadius_11.CornerRadius = UDim.new(0, 4)
+
+tigeradmin.Name = "tigeradmin"
+tigeradmin.Parent = ScrollingFrame
+tigeradmin.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+tigeradmin.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+tigeradmin.Size = UDim2.new(0, 90, 0, 14)
+tigeradmin.Font = Enum.Font.SourceSans
+tigeradmin.Text = "TigerAdmin(prisonlife)"
+tigeradmin.TextColor3 = Color3.new(1, 0, 0.0156863)
+tigeradmin.TextSize = 12
+
+Background_12.Name = "Background"
+Background_12.Parent = tigeradmin
+Background_12.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_12.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_12.BackgroundTransparency = 1
+Background_12.ClipsDescendants = true
+Background_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_12.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_12.Name = "CornerRadius"
+CornerRadius_12.Parent = Background_12
+CornerRadius_12.CornerRadius = UDim.new(0, 4)
+
+agent.Name = "agent"
+agent.Parent = ScrollingFrame
+agent.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+agent.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+agent.Size = UDim2.new(0, 90, 0, 14)
+agent.Font = Enum.Font.SourceSans
+agent.Text = "Agent(dahood)"
+agent.TextColor3 = Color3.new(1, 0, 0.0156863)
+agent.TextSize = 14
+
+Background_13.Name = "Background"
+Background_13.Parent = agent
+Background_13.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_13.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_13.BackgroundTransparency = 1
+Background_13.ClipsDescendants = true
+Background_13.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_13.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_13.Name = "CornerRadius"
+CornerRadius_13.Parent = Background_13
+CornerRadius_13.CornerRadius = UDim.new(0, 4)
+
+spacex.Name = "spacex"
+spacex.Parent = ScrollingFrame
+spacex.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+spacex.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+spacex.Size = UDim2.new(0, 90, 0, 14)
+spacex.Font = Enum.Font.SourceSans
+spacex.Text = "SpaceX(dahood)"
+spacex.TextColor3 = Color3.new(1, 0, 0.0156863)
+spacex.TextSize = 14
+
+Background_14.Name = "Background"
+Background_14.Parent = spacex
+Background_14.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_14.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_14.BackgroundTransparency = 1
+Background_14.ClipsDescendants = true
+Background_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_14.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_14.Name = "CornerRadius"
+CornerRadius_14.Parent = Background_14
+CornerRadius_14.CornerRadius = UDim.new(0, 4)
+
+blazex.Name = "blazex"
+blazex.Parent = ScrollingFrame
+blazex.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+blazex.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+blazex.Size = UDim2.new(0, 90, 0, 14)
+blazex.Font = Enum.Font.SourceSans
+blazex.Text = "BlazeX(BloxFruits)"
+blazex.TextColor3 = Color3.new(1, 0, 0.0156863)
+blazex.TextSize = 14
+
+Background_15.Name = "Background"
+Background_15.Parent = blazex
+Background_15.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_15.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_15.BackgroundTransparency = 1
+Background_15.ClipsDescendants = true
+Background_15.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_15.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_15.Name = "CornerRadius"
+CornerRadius_15.Parent = Background_15
+CornerRadius_15.CornerRadius = UDim.new(0, 4)
+
+vapev4.Name = "vapev4"
+vapev4.Parent = ScrollingFrame
+vapev4.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+vapev4.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+vapev4.Size = UDim2.new(0, 90, 0, 14)
+vapev4.Font = Enum.Font.SourceSans
+vapev4.Text = "VapeV4(Bedwars)"
+vapev4.TextColor3 = Color3.new(1, 0, 0.0156863)
+vapev4.TextSize = 14
+
+Background_16.Name = "Background"
+Background_16.Parent = vapev4
+Background_16.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_16.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_16.BackgroundTransparency = 1
+Background_16.ClipsDescendants = true
+Background_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_16.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_16.Name = "CornerRadius"
+CornerRadius_16.Parent = Background_16
+CornerRadius_16.CornerRadius = UDim.new(0, 4)
+
+shortcutv3.Name = "shortcutv3"
+shortcutv3.Parent = ScrollingFrame
+shortcutv3.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+shortcutv3.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+shortcutv3.Size = UDim2.new(0, 90, 0, 14)
+shortcutv3.Font = Enum.Font.SourceSans
+shortcutv3.Text = "ShortCutv3(khols)"
+shortcutv3.TextColor3 = Color3.new(1, 0, 0.0156863)
+shortcutv3.TextSize = 13
+shortcutv3.TextWrapped = true
+
+Background_17.Name = "Background"
+Background_17.Parent = shortcutv3
+Background_17.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_17.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_17.BackgroundTransparency = 1
+Background_17.ClipsDescendants = true
+Background_17.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_17.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_17.Name = "CornerRadius"
+CornerRadius_17.Parent = Background_17
+CornerRadius_17.CornerRadius = UDim.new(0, 4)
+
+owlhub.Name = "owlhub"
+owlhub.Parent = ScrollingFrame
+owlhub.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+owlhub.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+owlhub.Size = UDim2.new(0, 90, 0, 14)
+owlhub.Font = Enum.Font.SourceSans
+owlhub.Text = "OwlHub(esp/aimbot)"
+owlhub.TextColor3 = Color3.new(1, 0, 0.0156863)
+owlhub.TextSize = 11
+
+Background_18.Name = "Background"
+Background_18.Parent = owlhub
+Background_18.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_18.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_18.BackgroundTransparency = 1
+Background_18.ClipsDescendants = true
+Background_18.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_18.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_18.Name = "CornerRadius"
+CornerRadius_18.Parent = Background_18
+CornerRadius_18.CornerRadius = UDim.new(0, 4)
+
+cmdy.Name = "cmd-y"
+cmdy.Parent = ScrollingFrame
+cmdy.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+cmdy.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+cmdy.Size = UDim2.new(0, 90, 0, 14)
+cmdy.Font = Enum.Font.SourceSans
+cmdy.Text = "Cmd-Y(khols)"
+cmdy.TextColor3 = Color3.new(1, 0, 0.0156863)
+cmdy.TextSize = 14
+
+Background_19.Name = "Background"
+Background_19.Parent = cmdy
+Background_19.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_19.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_19.BackgroundTransparency = 1
+Background_19.ClipsDescendants = true
+Background_19.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_19.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_19.Name = "CornerRadius"
+CornerRadius_19.Parent = Background_19
+CornerRadius_19.CornerRadius = UDim.new(0, 4)
+
+backdoorexe.Name = "backdoor.exe"
+backdoorexe.Parent = ScrollingFrame
+backdoorexe.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+backdoorexe.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+backdoorexe.Size = UDim2.new(0, 90, 0, 14)
+backdoorexe.Font = Enum.Font.SourceSans
+backdoorexe.Text = "Backdoor.exe(univers)"
+backdoorexe.TextColor3 = Color3.new(1, 0, 0.0156863)
+backdoorexe.TextSize = 11
+
+Background_20.Name = "Background"
+Background_20.Parent = backdoorexe
+Background_20.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_20.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_20.BackgroundTransparency = 1
+Background_20.ClipsDescendants = true
+Background_20.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_20.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_20.Name = "CornerRadius"
+CornerRadius_20.Parent = Background_20
+CornerRadius_20.CornerRadius = UDim.new(0, 4)
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+TextButton.Position = UDim2.new(-0.0200000014, 0, 0.157004848, 0)
+TextButton.Size = UDim2.new(0, 90, 0, 14)
+TextButton.Visible = false
+TextButton.Font = Enum.Font.SourceSans
+TextButton.TextColor3 = Color3.new(1, 0, 0.0156863)
+TextButton.TextSize = 14
+
+Background_21.Name = "Background"
+Background_21.Parent = TextButton
+Background_21.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_21.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_21.BackgroundTransparency = 1
+Background_21.ClipsDescendants = true
+Background_21.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_21.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_21.Name = "CornerRadius"
+CornerRadius_21.Parent = Background_21
+CornerRadius_21.CornerRadius = UDim.new(0, 4)
+
+universalhub.Name = "universal hub"
+universalhub.Parent = ScrollingFrame
+universalhub.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+universalhub.Position = UDim2.new(-3.7252903e-09, 0, 0.659420252, 0)
+universalhub.Size = UDim2.new(0, 90, 0, 14)
+universalhub.Font = Enum.Font.SourceSans
+universalhub.Text = "Universal Hub(univers)"
+universalhub.TextColor3 = Color3.new(1, 0, 0.0156863)
+universalhub.TextSize = 11
+
+Background_22.Name = "Background"
+Background_22.Parent = universalhub
+Background_22.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_22.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_22.BackgroundTransparency = 1
+Background_22.ClipsDescendants = true
+Background_22.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_22.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_22.Name = "CornerRadius"
+CornerRadius_22.Parent = Background_22
+CornerRadius_22.CornerRadius = UDim.new(0, 4)
+
+UICorner_5.Parent = Scriptgui
+UICorner_5.CornerRadius = UDim.new(0, 4)
+
+executor.Name = "executor"
+executor.Parent = Main
+executor.Active = true
+executor.BackgroundColor3 = Color3.new(1, 1, 1)
+executor.BackgroundTransparency = 1
+executor.BorderSizePixel = 0
+executor.Position = UDim2.new(0.0256409757, 0, 0.109299518, 0)
+executor.Size = UDim2.new(0.957265139, 0, 0.733091772, 0)
+executor.CanvasSize = UDim2.new(8, 0, 4, 0)
+executor.ScrollBarThickness = 4
+
+code_box.Name = "code_box"
+code_box.Parent = executor
+code_box.BackgroundColor3 = Color3.new(0.0901961, 0.0901961, 0.0901961)
+code_box.BackgroundTransparency = 1
+code_box.Position = UDim2.new(0.00676181912, 0, 1.08991351e-07, 0)
+code_box.Size = UDim2.new(0.908471107, 0, 2.44897962, 0)
+code_box.ClearTextOnFocus = false
+code_box.Font = Enum.Font.Jura
+code_box.MultiLine = true
+code_box.PlaceholderColor3 = Color3.new(0.4, 0, 0)
+code_box.PlaceholderText = "--> Loadstring"
+code_box.Text = ""
+code_box.TextColor3 = Color3.new(1, 0, 0)
+code_box.TextScaled = true
+code_box.TextSize = 14
+code_box.TextWrapped = true
+code_box.TextXAlignment = Enum.TextXAlignment.Left
+code_box.TextYAlignment = Enum.TextYAlignment.Top
+
+Comments_.Name = "Comments_"
+Comments_.Parent = code_box
+Comments_.BackgroundColor3 = Color3.new(1, 1, 1)
+Comments_.BackgroundTransparency = 1
+Comments_.ClipsDescendants = true
+Comments_.Size = UDim2.new(1, 0, 1, 0)
+Comments_.Font = Enum.Font.Code
+Comments_.Text = ""
+Comments_.TextColor3 = Color3.new(0.4, 0.4, 0.4)
+Comments_.TextSize = 14
+Comments_.TextWrapped = true
+Comments_.TextXAlignment = Enum.TextXAlignment.Left
+Comments_.TextYAlignment = Enum.TextYAlignment.Top
+
+Globals_.Name = "Globals_"
+Globals_.Parent = code_box
+Globals_.BackgroundColor3 = Color3.new(1, 1, 1)
+Globals_.BackgroundTransparency = 1
+Globals_.ClipsDescendants = true
+Globals_.Size = UDim2.new(1, 0, 1, 0)
+Globals_.Font = Enum.Font.Code
+Globals_.Text = ""
+Globals_.TextColor3 = Color3.new(0.517647, 0.839216, 0.968628)
+Globals_.TextSize = 14
+Globals_.TextWrapped = true
+Globals_.TextXAlignment = Enum.TextXAlignment.Left
+Globals_.TextYAlignment = Enum.TextYAlignment.Top
+
+Keywords_.Name = "Keywords_"
+Keywords_.Parent = code_box
+Keywords_.BackgroundColor3 = Color3.new(1, 1, 1)
+Keywords_.BackgroundTransparency = 1
+Keywords_.ClipsDescendants = true
+Keywords_.Size = UDim2.new(1, 0, 1, 0)
+Keywords_.Font = Enum.Font.Code
+Keywords_.Text = ""
+Keywords_.TextColor3 = Color3.new(0.972549, 0.427451, 0.486275)
+Keywords_.TextSize = 14
+Keywords_.TextWrapped = true
+Keywords_.TextXAlignment = Enum.TextXAlignment.Left
+Keywords_.TextYAlignment = Enum.TextYAlignment.Top
+
+Numbers_.Name = "Numbers_"
+Numbers_.Parent = code_box
+Numbers_.BackgroundColor3 = Color3.new(1, 0.776471, 0)
+Numbers_.BackgroundTransparency = 1
+Numbers_.ClipsDescendants = true
+Numbers_.Size = UDim2.new(1, 0, 1, 0)
+Numbers_.Font = Enum.Font.Code
+Numbers_.Text = ""
+Numbers_.TextColor3 = Color3.new(1, 0.776471, 0)
+Numbers_.TextSize = 14
+Numbers_.TextWrapped = true
+Numbers_.TextXAlignment = Enum.TextXAlignment.Left
+Numbers_.TextYAlignment = Enum.TextYAlignment.Top
+
+Properties_.Name = "Properties_"
+Properties_.Parent = code_box
+Properties_.BackgroundColor3 = Color3.new(0.992157, 0.984314, 0.67451)
+Properties_.BackgroundTransparency = 1
+Properties_.ClipsDescendants = true
+Properties_.Size = UDim2.new(1, 0, 1, 0)
+Properties_.Font = Enum.Font.Code
+Properties_.Text = ""
+Properties_.TextColor3 = Color3.new(0.32549, 0.631373, 0.945098)
+Properties_.TextSize = 14
+Properties_.TextWrapped = true
+Properties_.TextXAlignment = Enum.TextXAlignment.Left
+Properties_.TextYAlignment = Enum.TextYAlignment.Top
+
+RemoteHighlight_.Name = "RemoteHighlight_"
+RemoteHighlight_.Parent = code_box
+RemoteHighlight_.BackgroundColor3 = Color3.new(0.992157, 0.984314, 0.67451)
+RemoteHighlight_.BackgroundTransparency = 1
+RemoteHighlight_.ClipsDescendants = true
+RemoteHighlight_.Size = UDim2.new(1, 0, 1, 0)
+RemoteHighlight_.Font = Enum.Font.Code
+RemoteHighlight_.Text = ""
+RemoteHighlight_.TextColor3 = Color3.new(0.992157, 0.984314, 0.67451)
+RemoteHighlight_.TextSize = 14
+RemoteHighlight_.TextWrapped = true
+RemoteHighlight_.TextXAlignment = Enum.TextXAlignment.Left
+RemoteHighlight_.TextYAlignment = Enum.TextYAlignment.Top
+
+Security_.Name = "Security_"
+Security_.Parent = code_box
+Security_.BackgroundColor3 = Color3.new(1, 0.776471, 0)
+Security_.BackgroundTransparency = 1
+Security_.ClipsDescendants = true
+Security_.Size = UDim2.new(1, 0, 1, 0)
+Security_.Font = Enum.Font.Code
+Security_.Text = ""
+Security_.TextColor3 = Color3.new(1, 0, 0)
+Security_.TextSize = 14
+Security_.TextWrapped = true
+Security_.TextXAlignment = Enum.TextXAlignment.Left
+Security_.TextYAlignment = Enum.TextYAlignment.Top
+
+Strings_.Name = "Strings_"
+Strings_.Parent = code_box
+Strings_.BackgroundColor3 = Color3.new(1, 1, 1)
+Strings_.BackgroundTransparency = 1
+Strings_.ClipsDescendants = true
+Strings_.Size = UDim2.new(1, 0, 1, 0)
+Strings_.Font = Enum.Font.Code
+Strings_.Text = ""
+Strings_.TextColor3 = Color3.new(0.678431, 0.945098, 0.584314)
+Strings_.TextSize = 14
+Strings_.TextWrapped = true
+Strings_.TextXAlignment = Enum.TextXAlignment.Left
+Strings_.TextYAlignment = Enum.TextYAlignment.Top
+
+Strings_2.Name = "Strings_2"
+Strings_2.Parent = code_box
+Strings_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Strings_2.BackgroundTransparency = 1
+Strings_2.ClipsDescendants = true
+Strings_2.Size = UDim2.new(1, 0, 1, 0)
+Strings_2.Font = Enum.Font.Code
+Strings_2.Text = ""
+Strings_2.TextColor3 = Color3.new(0.678431, 0.945098, 0.584314)
+Strings_2.TextSize = 14
+Strings_2.TextWrapped = true
+Strings_2.TextXAlignment = Enum.TextXAlignment.Left
+Strings_2.TextYAlignment = Enum.TextYAlignment.Top
+
+Booleans_.Name = "Booleans_"
+Booleans_.Parent = code_box
+Booleans_.BackgroundColor3 = Color3.new(1, 0.776471, 0)
+Booleans_.BackgroundTransparency = 1
+Booleans_.ClipsDescendants = true
+Booleans_.Size = UDim2.new(1, 0, 1, 0)
+Booleans_.Font = Enum.Font.Code
+Booleans_.Text = ""
+Booleans_.TextColor3 = Color3.new(1, 0.776471, 0)
+Booleans_.TextSize = 14
+Booleans_.TextWrapped = true
+Booleans_.TextXAlignment = Enum.TextXAlignment.Left
+Booleans_.TextYAlignment = Enum.TextYAlignment.Top
+
+UITextSizeConstraint.Parent = code_box
+UITextSizeConstraint.MaxTextSize = 14
+
+UICorner_6.Parent = code_box
+
+Tokens_.Name = "Tokens_"
+Tokens_.Parent = code_box
+Tokens_.BackgroundColor3 = Color3.new(1, 1, 1)
+Tokens_.BackgroundTransparency = 1
+Tokens_.ClipsDescendants = true
+Tokens_.Size = UDim2.new(1, 0, 1, 0)
+Tokens_.Font = Enum.Font.Code
+Tokens_.Text = ""
+Tokens_.TextColor3 = Color3.new(1, 1, 1)
+Tokens_.TextSize = 14
+Tokens_.TextTransparency = 1
+Tokens_.TextWrapped = true
+Tokens_.TextXAlignment = Enum.TextXAlignment.Left
+Tokens_.TextYAlignment = Enum.TextYAlignment.Top
+
+lines.Name = "lines"
+lines.Parent = executor
+lines.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+lines.BackgroundTransparency = 1
+lines.Size = UDim2.new(0.00701536331, 0, 2.44897962, 0)
+lines.Font = Enum.Font.Code
+lines.Text = "1"
+lines.TextColor3 = Color3.new(1, 0, 0.0156863)
+lines.TextScaled = true
+lines.TextSize = 14
+lines.TextWrapped = true
+lines.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_7.Parent = lines
+
+UITextSizeConstraint_2.Parent = lines
+UITextSizeConstraint_2.MaxTextSize = 14
+
+UICorner_8.Parent = Main
+UICorner_8.CornerRadius = UDim.new(0, 4)
+
+randomthingy.Name = "randomthingy"
+randomthingy.Parent = Main
+randomthingy.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+randomthingy.BorderSizePixel = 0
+randomthingy.Position = UDim2.new(0, 0, 0.860000014, 0)
+randomthingy.Size = UDim2.new(1, 0, 0, 29)
+
+UICorner_9.Parent = randomthingy
+UICorner_9.CornerRadius = UDim.new(0, 4)
+
+Options.Name = "Options"
+Options.Parent = Main
+Options.BackgroundColor3 = Color3.new(1, 0, 0)
+Options.BackgroundTransparency = 1
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(0.898070216, 0, 0.0386473425, 0)
+Options.Size = UDim2.new(0, 19, 0, 14)
+Options.Selected = true
+Options.Image = "rbxassetid://13184111124"
+Options.ImageColor3 = Color3.new(1, 0, 0)
+
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.new(1, 1, 1)
+Clear.BackgroundTransparency = 1
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.0315789469, 0, 0.889655173, 0)
+Clear.Size = UDim2.new(0, 69, 0, 16)
+Clear.ZIndex = 5
+Clear.Font = Enum.Font.Unknown
+Clear.Text = "Clear Code"
+Clear.TextColor3 = Color3.new(1, 1, 1)
+Clear.TextSize = 10
+
+Background_23.Name = "Background"
+Background_23.Parent = Clear
+Background_23.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_23.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_23.BackgroundTransparency = 1
+Background_23.ClipsDescendants = true
+Background_23.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_23.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_23.Name = "CornerRadius"
+CornerRadius_23.Parent = Background_23
+CornerRadius_23.CornerRadius = UDim.new(0, 4)
+
+Execute.Name = "Execute"
+Execute.Parent = Main
+Execute.BackgroundColor3 = Color3.new(1, 1, 1)
+Execute.BackgroundTransparency = 1
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.37813136, 0, 0.889655173, 0)
+Execute.Size = UDim2.new(0, 69, 0, 16)
+Execute.ZIndex = 5
+Execute.Font = Enum.Font.Unknown
+Execute.Text = "Execute Code"
+Execute.TextColor3 = Color3.new(1, 1, 1)
+Execute.TextSize = 10
+
+Background_24.Name = "Background"
+Background_24.Parent = Execute
+Background_24.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_24.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_24.BackgroundTransparency = 1
+Background_24.ClipsDescendants = true
+Background_24.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_24.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_24.Name = "CornerRadius"
+CornerRadius_24.Parent = Background_24
+CornerRadius_24.CornerRadius = UDim.new(0, 4)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Main
+Scripts.BackgroundColor3 = Color3.new(1, 1, 1)
+Scripts.BackgroundTransparency = 1
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.721174955, 0, 0.889655173, 0)
+Scripts.Size = UDim2.new(0, 69, 0, 16)
+Scripts.ZIndex = 5
+Scripts.Font = Enum.Font.Unknown
+Scripts.Text = "Open Scripts"
+Scripts.TextColor3 = Color3.new(1, 1, 1)
+Scripts.TextSize = 10
+
+Background_25.Name = "Background"
+Background_25.Parent = Scripts
+Background_25.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_25.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_25.BackgroundTransparency = 1
+Background_25.ClipsDescendants = true
+Background_25.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_25.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_25.Name = "CornerRadius"
+CornerRadius_25.Parent = Background_25
+CornerRadius_25.CornerRadius = UDim.new(0, 4)
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.161077112, 0, 0.0193236712, 0)
+TextLabel_2.Size = UDim2.new(0, 192, 0, 18)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "crisisFE"
+TextLabel_2.TextColor3 = Color3.new(0.811765, 0, 0)
+TextLabel_2.TextSize = 16
+TextLabel_2.TextWrapped = true
+
+Backgrounds_2.Name = "Backgrounds"
+Backgrounds_2.Parent = TextLabel_2
+
+bloody.Name = "bloody"
+bloody.Parent = Backgrounds_2
+bloody.BackgroundColor3 = Color3.new(1, 1, 1)
+bloody.BackgroundTransparency = 1
+bloody.Position = UDim2.new(-0.229000092, 0, 0, 0)
+bloody.Size = UDim2.new(0, 284, 0, 208)
+bloody.Visible = false
+bloody.Image = "rbxassetid://13184237642"
+bloody.ImageTransparency = 0.8299999833106995
+
+MrThundee.Name = "MrThundee"
+MrThundee.Parent = Backgrounds_2
+MrThundee.BackgroundColor3 = Color3.new(1, 1, 1)
+MrThundee.BackgroundTransparency = 1
+MrThundee.Position = UDim2.new(-0.229166672, 0, 0, 0)
+MrThundee.Size = UDim2.new(0, 285, 0, 208)
+MrThundee.Visible = false
+MrThundee.Image = "http://www.roblox.com/asset/?id=1012668492"
+MrThundee.ImageColor3 = Color3.new(1, 0.392157, 0.392157)
+MrThundee.ImageTransparency = 0.8299999833106995
+
+Animeshit.Name = "Anime shit"
+Animeshit.Parent = Backgrounds_2
+
+Anim2.Name = "Anim2"
+Anim2.Parent = Animeshit
+Anim2.BackgroundColor3 = Color3.new(1, 1, 1)
+Anim2.BackgroundTransparency = 1
+Anim2.Position = UDim2.new(-0.229000092, 0, 0, 0)
+Anim2.Size = UDim2.new(0, 284, 0, 208)
+Anim2.Visible = false
+Anim2.Image = "http://www.roblox.com/asset/?id=6675147486"
+Anim2.ImageTransparency = 0.8199999928474426
+
+Anim3.Name = "Anim3"
+Anim3.Parent = Animeshit
+Anim3.BackgroundColor3 = Color3.new(1, 1, 1)
+Anim3.BackgroundTransparency = 1
+Anim3.Position = UDim2.new(-0.229000092, 0, 0, 0)
+Anim3.Size = UDim2.new(0, 284, 0, 208)
+Anim3.Visible = false
+Anim3.Image = "http://www.roblox.com/asset/?id=11902680303"
+Anim3.ImageTransparency = 0.7699999809265137
+
+Anim4.Name = "Anim4"
+Anim4.Parent = Animeshit
+Anim4.BackgroundColor3 = Color3.new(1, 1, 1)
+Anim4.BackgroundTransparency = 1
+Anim4.Position = UDim2.new(-0.229000092, 0, 0, 0)
+Anim4.Size = UDim2.new(0, 285, 0, 208)
+Anim4.Visible = false
+Anim4.Image = "http://www.roblox.com/asset/?id=12461003274"
+Anim4.ImageTransparency = 0.7799999713897705
+
+Anim1.Name = "Anim1"
+Anim1.Parent = Animeshit
+Anim1.BackgroundColor3 = Color3.new(1, 1, 1)
+Anim1.BackgroundTransparency = 1
+Anim1.Position = UDim2.new(-0.229000002, 0, 0, 0)
+Anim1.Size = UDim2.new(0, 287, 0, 208)
+Anim1.Visible = false
+Anim1.Image = "http://www.roblox.com/asset/?id=11778372908"
+Anim1.ImageTransparency = 0.9200000166893005
+
+credsfrME.Name = "credsfrME"
+credsfrME.Parent = Main
+credsfrME.BackgroundColor3 = Color3.new(0.0784314, 0.0784314, 0.0784314)
+credsfrME.Position = UDim2.new(0.0035086649, 0, 1.04830909, 0)
+credsfrME.Size = UDim2.new(0, 284, 0, 29)
+credsfrME.Visible = false
+
+TextLabel_3.Parent = credsfrME
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Size = UDim2.new(0, 284, 0, 28)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "JUST ME I DID EVERYTHING -- DIZZY#0625"
+TextLabel_3.TextColor3 = Color3.new(1, 0, 0)
+TextLabel_3.TextSize = 14
+
+UICorner_10.Parent = credsfrME
+UICorner_10.CornerRadius = UDim.new(0, 4)
+
+credbutton.Name = "cred.button"
+credbutton.Parent = Main
+credbutton.BackgroundColor3 = Color3.new(1, 1, 1)
+credbutton.BackgroundTransparency = 1
+credbutton.BorderSizePixel = 0
+credbutton.Position = UDim2.new(0.721175015, 0, 0.034582682, 0)
+credbutton.Size = UDim2.new(0, 44, 0, 16)
+credbutton.ZIndex = 5
+credbutton.Font = Enum.Font.Unknown
+credbutton.Text = "Credits"
+credbutton.TextColor3 = Color3.new(1, 1, 1)
+credbutton.TextSize = 10
+
+Background_26.Name = "Background"
+Background_26.Parent = credbutton
+Background_26.AnchorPoint = Vector2.new(0.5, 0.5)
+Background_26.BackgroundColor3 = Color3.new(0.0980392, 0.462745, 0.823529)
+Background_26.BackgroundTransparency = 1
+Background_26.ClipsDescendants = true
+Background_26.Position = UDim2.new(0.5, 0, 0.5, 0)
+Background_26.Size = UDim2.new(1, 0, 1, 0)
+
+CornerRadius_26.Name = "CornerRadius"
+CornerRadius_26.Parent = Background_26
+CornerRadius_26.CornerRadius = UDim.new(0, 4)
+
+-- Scripts
+
+local function HURMJ_fake_script() -- Main.Smooth GUI Dragging 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8); -- // The speed of the UI darg.
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(HURMJ_fake_script)()
+local function PWOXJX_fake_script() -- Backgrounds.RippleEffect 
+	local script = Instance.new('LocalScript', Backgrounds)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(PWOXJX_fake_script)()
+local function YQJKBPA_fake_script() -- Backgrounds.LocalScript 
+	local script = Instance.new('LocalScript', Backgrounds)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Parent.bgframe.Visible = true
+			script.Parent.Parent.Parent.bgframe.animeop.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Parent.bgframe.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(YQJKBPA_fake_script)()
+local function RRJKQG_fake_script() -- Bloodsbg.RippleEffect 
+	local script = Instance.new('LocalScript', Bloodsbg)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(RRJKQG_fake_script)()
+local function VCYO_fake_script() -- Bloodsbg.LocalScript 
+	local script = Instance.new('LocalScript', Bloodsbg)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Parent.TextLabel.Backgrounds.bloody.Visible = true
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim1.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim3.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim2.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim4.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds.MrThundee.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Parent.TextLabel.Backgrounds.bloody.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(VCYO_fake_script)()
+local function UVDVOP_fake_script() -- thunderbg.RippleEffect 
+	local script = Instance.new('LocalScript', thunderbg)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(UVDVOP_fake_script)()
+local function CMBZ_fake_script() -- thunderbg.LocalScript 
+	local script = Instance.new('LocalScript', thunderbg)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Parent.TextLabel.Backgrounds.MrThundee.Visible = true
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim1.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim3.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim2.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim4.Visible = false
+			script.Parent.Parent.Parent.TextLabel.Backgrounds.bloody.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Parent.TextLabel.Backgrounds.MrThundee.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(CMBZ_fake_script)()
+local function BGCC_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim3.Visible = true
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim1.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim2.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim4.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.MrThundee.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.bloody.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim3.Visible = false
+			
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(BGCC_fake_script)()
+local function NADF_fake_script() -- ImageButton.RippleEffect 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(NADF_fake_script)()
+local function KUMLTK_fake_script() -- ImageButton_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_2)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim2.Visible = true
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim1.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim4.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim3.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.MrThundee.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.bloody.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim2.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(KUMLTK_fake_script)()
+local function RPJWWL_fake_script() -- ImageButton_2.RippleEffect 
+	local script = Instance.new('LocalScript', ImageButton_2)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(RPJWWL_fake_script)()
+local function HMATQQR_fake_script() -- ImageButton_3.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_3)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim4.Visible = true
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim1.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim2.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim3.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.MrThundee.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.bloody.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim4.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(HMATQQR_fake_script)()
+local function SSAWXOK_fake_script() -- ImageButton_3.RippleEffect 
+	local script = Instance.new('LocalScript', ImageButton_3)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(SSAWXOK_fake_script)()
+local function FFDTCAQ_fake_script() -- ImageButton_4.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_4)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim1.Visible = true
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim3.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim2.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim4.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.MrThundee.Visible = false
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds.bloody.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Parent.Parent.TextLabel.Backgrounds["Anime shit"].Anim1.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(FFDTCAQ_fake_script)()
+local function YNPMZ_fake_script() -- ImageButton_4.RippleEffect 
+	local script = Instance.new('LocalScript', ImageButton_4)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(YNPMZ_fake_script)()
+local function LNERT_fake_script() -- Animebg.RippleEffect 
+	local script = Instance.new('LocalScript', Animebg)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(LNERT_fake_script)()
+local function NUHIGA_fake_script() -- Animebg.LocalScript 
+	local script = Instance.new('LocalScript', Animebg)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.animeop.Visible = true
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.animeop.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(NUHIGA_fake_script)()
+local function UFWML_fake_script() -- Search.Search 
+	local script = Instance.new('LocalScript', Search)
+
+	local ListboxFrame = script.Parent.Parent.ScrollingFrame
+	
+	script.Parent:GetPropertyChangedSignal("Text"):Connect(function()
+		local text = string.lower(script.Parent.Text)
+		for i,v in pairs(ListboxFrame:GetChildren()) do
+			if v:IsA("TextButton") then
+				v.Visible = true
+				local ftext = string.lower(v.Text)
+				if not string.match(ftext, text) then
+					v.Visible = false
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(UFWML_fake_script)()
+local function CMJNNK_fake_script() -- infiniteyeild.RippleEffect 
+	local script = Instance.new('LocalScript', infiniteyeild)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(CMJNNK_fake_script)()
+local function ZEVUUCR_fake_script() -- infiniteyeild.LocalScript 
+	local script = Instance.new('LocalScript', infiniteyeild)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()"
+	end)
+	
+end
+coroutine.wrap(ZEVUUCR_fake_script)()
+local function LZNGY_fake_script() -- cmdx.RippleEffect 
+	local script = Instance.new('LocalScript', cmdx)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(LZNGY_fake_script)()
+local function VVAY_fake_script() -- cmdx.LocalScript 
+	local script = Instance.new('LocalScript', cmdx)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet(('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source'),true))()"
+	end)
+	
+end
+coroutine.wrap(VVAY_fake_script)()
+local function ZDCHRTJ_fake_script() -- fatesadmin.RippleEffect 
+	local script = Instance.new('LocalScript', fatesadmin)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(ZDCHRTJ_fake_script)()
+local function ELSTE_fake_script() -- fatesadmin.LocalScript 
+	local script = Instance.new('LocalScript', fatesadmin)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua'))()"
+	end)
+	
+end
+coroutine.wrap(ELSTE_fake_script)()
+local function ODEBCEW_fake_script() -- tigeradmin.RippleEffect 
+	local script = Instance.new('LocalScript', tigeradmin)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(ODEBCEW_fake_script)()
+local function ODWUT_fake_script() -- tigeradmin.LocalScript 
+	local script = Instance.new('LocalScript', tigeradmin)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+	
+end
+coroutine.wrap(ODWUT_fake_script)()
+local function VPJJDIH_fake_script() -- agent.RippleEffect 
+	local script = Instance.new('LocalScript', agent)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(VPJJDIH_fake_script)()
+local function HNAF_fake_script() -- agent.LocalScript 
+	local script = Instance.new('LocalScript', agent)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/mrhackerman35297/AgentCC/main/Launch.lua'))()"
+	end)
+	
+end
+coroutine.wrap(HNAF_fake_script)()
+local function UJRAKK_fake_script() -- spacex.RippleEffect 
+	local script = Instance.new('LocalScript', spacex)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(UJRAKK_fake_script)()
+local function LISDLG_fake_script() -- spacex.LocalScript 
+	local script = Instance.new('LocalScript', spacex)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/spacexrandom/Lua/main/DaHood', true))()"
+	end)
+	
+end
+coroutine.wrap(LISDLG_fake_script)()
+local function CGWT_fake_script() -- blazex.RippleEffect 
+	local script = Instance.new('LocalScript', blazex)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(CGWT_fake_script)()
+local function SACCCL_fake_script() -- blazex.LocalScript 
+	local script = Instance.new('LocalScript', blazex)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/WindowsXp12/BlxzeRBLX/main/BLxzeHub.lua'))()"
+	end)
+	
+end
+coroutine.wrap(SACCCL_fake_script)()
+local function NZELKB_fake_script() -- vapev4.RippleEffect 
+	local script = Instance.new('LocalScript', vapev4)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(NZELKB_fake_script)()
+local function DHMZ_fake_script() -- vapev4.LocalScript 
+	local script = Instance.new('LocalScript', vapev4)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua', true))()"
+	end)
+	
+end
+coroutine.wrap(DHMZ_fake_script)()
+local function PWUJAN_fake_script() -- shortcutv3.RippleEffect 
+	local script = Instance.new('LocalScript', shortcutv3)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(PWUJAN_fake_script)()
+local function TIIRPD_fake_script() -- shortcutv3.LocalScript 
+	local script = Instance.new('LocalScript', shortcutv3)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/Old%20scv3'),true))() "
+	end)
+	
+end
+coroutine.wrap(TIIRPD_fake_script)()
+local function VQWSNP_fake_script() -- owlhub.RippleEffect 
+	local script = Instance.new('LocalScript', owlhub)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(VQWSNP_fake_script)()
+local function ADLNJ_fake_script() -- owlhub.LocalScript 
+	local script = Instance.new('LocalScript', owlhub)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))();"
+	end)
+	
+end
+coroutine.wrap(ADLNJ_fake_script)()
+local function WACSGII_fake_script() -- cmdy.RippleEffect 
+	local script = Instance.new('LocalScript', cmdy)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(WACSGII_fake_script)()
+local function RPKLUB_fake_script() -- cmdy.LocalScript 
+	local script = Instance.new('LocalScript', cmdy)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/quivings/cmdy/main/main'))()"
+	end)
+	
+end
+coroutine.wrap(RPKLUB_fake_script)()
+local function EKUJCWG_fake_script() -- backdoorexe.RippleEffect 
+	local script = Instance.new('LocalScript', backdoorexe)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(EKUJCWG_fake_script)()
+local function GVTB_fake_script() -- backdoorexe.LocalScript 
+	local script = Instance.new('LocalScript', backdoorexe)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/iK4oS/backdoor.exe/v8/src/main.lua'))();"
+	end)
+	
+end
+coroutine.wrap(GVTB_fake_script)()
+local function VJHN_fake_script() -- TextButton.RippleEffect 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(VJHN_fake_script)()
+local function SWAKR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+	
+end
+coroutine.wrap(SWAKR_fake_script)()
+local function USKBR_fake_script() -- universalhub.RippleEffect 
+	local script = Instance.new('LocalScript', universalhub)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(USKBR_fake_script)()
+local function RVJB_fake_script() -- universalhub.LocalScript 
+	local script = Instance.new('LocalScript', universalhub)
+
+	
+	
+	
+	local textbox = script.Parent.Parent.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = "https://discord.gg/g4n3yaReN4"
+	end)
+	
+end
+coroutine.wrap(RVJB_fake_script)()
+local function HZMGRQK_fake_script() -- lines.LocalScript 
+	local script = Instance.new('LocalScript', lines)
+
+	-- Get the TextBox and TextLabel objects
+	local textBox = script.Parent.Parent.Parent.executor.code_box
+	local lineNumbers = script.Parent.Parent.lines
+	
+	-- Define a function to update the line numbers
+	local function updateLineNumbers()
+		-- Split the text into individual lines
+		local lines = string.split(textBox.Text, "\n")
+	
+		-- Update the TextLabel to show the number of lines
+		lineNumbers.Text = ""
+		for i, line in ipairs(lines) do
+			lineNumbers.Text = lineNumbers.Text .. i .. "\n"
+		end
+	end
+	
+	-- Call the updateLineNumbers function whenever the TextBox text changes
+	textBox.Changed:Connect(updateLineNumbers)
+	
+	-- Call the updateLineNumbers function initially to set the line numbers
+	updateLineNumbers()
+	
+end
+coroutine.wrap(HZMGRQK_fake_script)()
+local function RKHOD_fake_script() -- Options.LocalScript 
+	local script = Instance.new('LocalScript', Options)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.MenuFrame.Visible = true
+			script.Parent.Parent.bgframe.Visible = false
+			script.Parent.Parent.bgframe.animeop.Visible = false
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.MenuFrame.Visible = false
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(RKHOD_fake_script)()
+local function GUNXEPH_fake_script() -- Clear.RippleEffect 
+	local script = Instance.new('LocalScript', Clear)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(GUNXEPH_fake_script)()
+local function FORNRM_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	
+	
+	local textbox = script.Parent.Parent.executor.code_box
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+	
+end
+coroutine.wrap(FORNRM_fake_script)()
+local function WWUKOXF_fake_script() -- Execute.RippleEffect 
+	local script = Instance.new('LocalScript', Execute)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(WWUKOXF_fake_script)()
+local function FWKS_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local code = script.Parent.Parent.executor.code_box.Text-- Get the code from the CodeBox
+		local success, err = pcall(loadstring(code)) -- Attempt to execute the code
+	
+		if not success then
+			print("Error: " .. err)
+		end
+	end)
+	
+end
+coroutine.wrap(FWKS_fake_script)()
+local function DMSYWX_fake_script() -- Scripts.RippleEffect 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(DMSYWX_fake_script)()
+local function UHVU_fake_script() -- Scripts.LocalScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Scriptgui.Visible = true
+			script.Parent.Parent.Scripts.Text = 'Close Scripts'
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Scriptgui.Visible = false
+			script.Parent.Parent.Scripts.Text = 'Open Scripts'
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(UHVU_fake_script)()
+local function MAQHOOM_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	-- Replace "ScreenGui" with the name of your GUI
+	local gui = game.Players.LocalPlayer.PlayerGui:WaitForChild("Crisisfe")
+	
+	-- Toggle the GUI on and off when the "V" key is pressed
+	local toggleKey = Enum.KeyCode.V
+	local toggleGui = false
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == toggleKey and not gameProcessed then
+			toggleGui = not toggleGui
+			gui.Enabled = toggleGui
+		end
+	end)
+	
+end
+coroutine.wrap(MAQHOOM_fake_script)()
+local function SDIWWBA_fake_script() -- credbutton.RippleEffect 
+	local script = Instance.new('LocalScript', credbutton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local TweenService = game:GetService("TweenService")
+	
+	local mouse = Players.LocalPlayer:GetMouse()
+	
+	local button = script.Parent
+	local background = button:WaitForChild("Background")
+	
+	local active = false
+	local hovering = false
+	
+	local function CreateCircle()
+		local circle = Instance.new("Frame")
+		local cornerRadius = Instance.new("UICorner")
+		
+		circle.AnchorPoint = Vector2.new(0.5, 0.5)
+		circle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		circle.Size = UDim2.new(0, 0, 0, 0)
+		
+		cornerRadius.CornerRadius = UDim.new(0.5, 0)
+		cornerRadius.Parent = circle
+		
+		return circle
+	end
+	
+	local function CalculateDistance(pointA, pointB)
+		return math.sqrt(((pointB.X - pointA.X) ^ 2) + ((pointB.Y - pointA.Y) ^ 2))
+	end
+	
+	local function OnMouseButton1Down()
+		active = true
+		
+		local buttonAbsoluteSize = button.AbsoluteSize
+		local buttonAbsolutePosition = button.AbsolutePosition
+		
+		local mouseAbsolutePosition = Vector2.new(mouse.X, mouse.Y)
+		local mouseRelativePosition = (mouseAbsolutePosition - buttonAbsolutePosition)
+		
+		local circle = CreateCircle()
+		
+		circle.BackgroundTransparency = 0.84
+		circle.Position = UDim2.new(0, mouseRelativePosition.X, 0, mouseRelativePosition.Y)
+		circle.Parent = background
+		
+		local topLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, 0))
+		local topRight = CalculateDistance(mouseRelativePosition, Vector2.new(buttonAbsoluteSize.X, 0))
+		local bottomRight = CalculateDistance(mouseRelativePosition, buttonAbsoluteSize)
+		local bottomLeft = CalculateDistance(mouseRelativePosition, Vector2.new(0, buttonAbsoluteSize.Y))
+		
+		local size = math.max(topLeft, topRight, bottomRight, bottomLeft) * 2
+		
+		local tweenTime = 0.5 -- seconds
+		local startedTimestamp
+		local completed = false
+		
+		local expand = TweenService:Create(
+			circle,
+			TweenInfo.new(
+				tweenTime,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.Out
+			),
+			{ Size = UDim2.new(0, size, 0, size) }
+		)
+		
+		local connection
+		connection = RunService.RenderStepped:Connect(function()
+			if not active then
+				connection:Disconnect()
+				
+				local defaultTime = (tweenTime / 3)
+				local timeRemaining = tweenTime - (os.time() - startedTimestamp)
+				local newTweenTime = not completed and timeRemaining > defaultTime and timeRemaining or defaultTime
+				
+				local fadeOut = TweenService:Create(
+					circle,
+					TweenInfo.new(
+						newTweenTime,
+						Enum.EasingStyle.Linear,
+						Enum.EasingDirection.Out
+					),
+					{ BackgroundTransparency = 1 }
+				)
+				
+				fadeOut:Play()
+				fadeOut.Completed:Wait()
+				
+				circle:Destroy()
+			end
+		end)
+		
+		expand:Play()
+		startedTimestamp = os.time()
+		expand.Completed:Wait()
+		
+		completed = true
+	end
+	
+	local function OnMouseButton1Up()
+		active = false
+	end
+	
+	local function OnMouseEnter()
+		hovering = true
+		
+		local tweenTime = 0.125
+		local tweenInfo = TweenInfo.new(
+			tweenTime,
+			Enum.EasingStyle.Linear,
+			Enum.EasingDirection.Out
+		)
+		
+		local backgroundFadeIn = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 0.95 })
+		local borderFadeIn = TweenService:Create(background.Border, tweenInfo, { Transparency = 0 })
+		
+		backgroundFadeIn:Play()
+		borderFadeIn:Play()
+		
+		backgroundFadeIn.Completed:Wait()
+		
+		local backgroundFadeOut = TweenService:Create(background, tweenInfo, { BackgroundTransparency = 1 })
+		local borderFadeOut = TweenService:Create(background.Border, tweenInfo, { Transparency = 0.5 })
+		
+		repeat wait() until not hovering
+		
+		backgroundFadeOut:Play()
+		borderFadeOut:Play()
+	end
+	
+	local function OnMouseLeave()
+		hovering = false
+		active = false
+	end
+	
+	button.MouseButton1Down:Connect(OnMouseButton1Down)
+	button.MouseButton1Up:Connect(OnMouseButton1Up)
+	
+	button.MouseEnter:Connect(OnMouseEnter)
+	button.MouseLeave:Connect(OnMouseLeave)
+end
+coroutine.wrap(SDIWWBA_fake_script)()
+local function PFGBA_fake_script() -- credbutton.LocalScript 
+	local script = Instance.new('LocalScript', credbutton)
+
+	local toggleState = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		toggleState = not toggleState
+		if toggleState then
+			script.Parent.Parent.Scriptgui.Visible = true
+			
+			-- Do something when the button is toggled on
+		else
+			script.Parent.Parent.Scriptgui.Visible = false
+			script.Parent.Parent.Scripts.Text = 'Open Scripts'
+			-- Do something when the button is toggled off
+		end
+	end)
+	
+end
+coroutine.wrap(PFGBA_fake_script)()
