@@ -8,6 +8,8 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         game.Players:Chat("freeze "..text)
         game.Players:Chat("rainbowify "..text)
         game.Players:Chat("unfreeze "..text)
+        game.Players:Chat("unff "..text)
+        game.Players:Chat("ungod "..text)
         wait(2)
         game.Players:Chat("explode "..text)
     end
