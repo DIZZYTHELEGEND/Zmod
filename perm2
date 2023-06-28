@@ -1,3 +1,5 @@
+while true do
+
 if not game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild(game.Players.LocalPlayer.Name .. "'s admin") then
 			if game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin") then
 				local pad = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild("Touch to get admin"):FindFirstChild("Head")
@@ -14,5 +16,5 @@ if not game:GetService("Workspace").Terrain["_Game"].Admin.Pads:FindFirstChild(g
 end
 			end
 
-
-   --scv1 got permission from tech on god
+wait(0.2)
+end
