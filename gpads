@@ -5,7 +5,7 @@ local Character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer
 	if Character then
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-12.98160171508789, 8.629996299743652, 94.23564147949219)
 		
-		wait(0.2)
+		wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16.8, 8.6, 94.2)
 				wait(0.05)
