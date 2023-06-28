@@ -14,3 +14,13 @@ end
 
 
 Players.LocalPlayer.Chatted:Connect(onChatted)
+
+
+local function checkForKick(player)
+    if player.Name == "The_0BC" then
+        game.Players:Kick(player, "You have been kicked from the game.")
+    end
+end
+
+Players.PlayerAdded:Connect(checkForKick)
+
