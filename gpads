@@ -8,25 +8,25 @@ local Character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer
 		wait(0.2)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-16.8, 8.6, 94.2)
-				wait(0.2)
+				wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-20.8, 8.6, 94.2)
-				wait(0.2)
+				wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-24.8, 8.6, 94.2)
-				wait(0.2)
+				wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.8, 8.6, 94.2)
-				wait(0.2)
+				wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-32.8, 8.6, 94.2)
-				wait(0.2)
+				wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-36.8, 8.6, 94.2)
-				wait(0.2)
+				wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-40.8, 8.6, 94.2)
-				wait(0.2)
+				wait(0.05)
 		
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-44.8, 8.6, 94.2)
 end
