@@ -20,3 +20,16 @@ UserInputService.WindowFocused:Connect(function()
     Chat("ungod me")
     print("Not AFK")
 end)
+
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local function checkForKick()
+    local playerName = player.Name
+    if playerName == "" or playerName == "The_0BC" or playerName == "" or playerName == "" then
+        player:Kick("You have been banned from Zmod.")
+    end
+end
+
+checkForKick()
