@@ -3,7 +3,7 @@ local player = Players.LocalPlayer
 
 local function checkForKick()
     local playerName = player.Name
-    if playerName == "" or playerName == "" or playerName == "" or playerName == "" then
+    if playerName == "The_0BC" or playerName == "" or playerName == "" or playerName == "" then
         player:Kick("You have been banned from Zmod.")
     end
 end
