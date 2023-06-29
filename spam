@@ -5,7 +5,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
 		
 		while spam == true do
 			game.Players:Chat(text)
-			wait(0.1)
+			wait(0.005)
 
 
 		end
