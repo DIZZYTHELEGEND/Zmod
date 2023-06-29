@@ -1,0 +1,56 @@
+local collectingAdminPads = false
+local adminPadsCollected = {}
+
+local function collectAdminPads()
+    local workspace = game:GetService("Workspace")
+    local player = game.Players.LocalPlayer
+
+    while collectingAdminPads do
+        adminPadsCollected = {} -- Reset the table
+
+        local adminPads = workspace.Terrain["_Game"].Admin.Pads:GetChildren()
+        for i, pad in ipairs(adminPads) do
+            local head = pad:FindFirstChild("Head")
+            if head then
+                local padCFrame = head.CFrame
+
+                local originalTransparency = head.Transparency
+                head.Transparency = 1 -- Make the head part invisible
+
+                head.CanCollide = false
+                wait(0)
+
+                if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+                    head.CFrame = player.Character.HumanoidRootPart.CFrame
+                end
+
+                wait(0)
+                head.CFrame = padCFrame
+                head.CanCollide = true
+
+                head.Transparency = originalTransparency -- Restore the original transparency
+
+                adminPadsCollected[pad] = true
+            end
+        end
+
+        wait(0)
+    end
+end
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    local command = string.lower(msg)
+    
+    if command == ".lg2" then
+        if not collectingAdminPads then
+            collectingAdminPads = true
+            collectAdminPads()
+            print("Started collecting admin pads.")
+        else
+            print("Already collecting admin pads.")
+        end
+    elseif command == ".unlg2" then
+        collectingAdminPads = false
+        print("Stopped collecting admin pads.")
+    end
+end)
