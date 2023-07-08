@@ -1,0 +1,58 @@
+local blacklistedTools = {
+    "OrinthianSwordAndShield",
+    "VampireVanquisher" --crash gears:P
+}
+
+local anticrashMode = true
+
+local function executeCommands(player, toolName)
+    game.Players:Chat("reset " .. player.Name)
+    game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[Zmod] :\n" .. player.Name .. " has been caught using " .. toolName .. " potentially trying to crash")
+end
+
+local function checkPlayerBackpack(player)
+    local backpack = player:FindFirstChild("Backpack")
+
+    if backpack then
+        for _, toolName in ipairs(blacklistedTools) do
+            local tool = backpack:FindFirstChild(toolName)
+            if tool and not anticrashMode then
+                executeCommands(player, toolName)
+                break
+            end
+        end
+    end
+end
+
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        checkPlayerBackpack(player)
+    end)
+    checkPlayerBackpack(player)
+end)
+
+game:GetService("RunService").Heartbeat:Connect(function()
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if player.Character then
+            checkPlayerBackpack(player)
+        end
+    end
+end)
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    local command = string.lower(msg)
+
+    if command == ".anticrash" then
+        anticrashMode = false
+        print("Anti-crash is enabled.")
+    elseif command == ".unanticrash" then
+        anticrashMode = true
+        print("Anti-crash is disabled.")
+    end
+end)
+
+for _, player in ipairs(game.Players:GetPlayers()) do
+    if player.Character then
+        checkPlayerBackpack(player)
+    end
+end
