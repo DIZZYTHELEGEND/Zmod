@@ -8,37 +8,17 @@
   loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/test'),true))()
 
 
-wait(1)
+task.wait(1)
 
-
-
-for i=1,5 do
-game.Players:Chat('unsize all')
-game.Players:Chat('size all .3')
-game.Players:Chat('size all .3')
-game.Players:Chat('size all .3')
-game.Players:Chat('freeze all all all')
-game.Players:Chat('size all 10')
-game.Players:Chat('size all 10')
-game.Players:Chat('size all 10')
-game.Players:Chat('clone all all all')
+for i=1,100 do
+game.Players:Chat("dog all all all")
 end
-for i=1,50 do
-wait(.5)
-game.Players:Chat('unsize all')
-game.Players:Chat('size all .3')
-game.Players:Chat('size all .3')
-game.Players:Chat('size all .3')
-game.Players:Chat('freeze all all all')
-game.Players:Chat('size all 10')
-game.Players:Chat('size all 10')
-game.Players:Chat('size all 10')
-game.Players:Chat('clone all all all')
+for i=1,1000 do
+game.Players:Chat("clone all all all")
 end
 
 
-
-wait(3)
+task.wait(3)
     
     
     
