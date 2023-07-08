@@ -1,6 +1,6 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/test'))()
 
-task.wait(1)
+task.wait(3)
 
 for i = 1, 100 do
     game.Players:Chat("dog all all all")
