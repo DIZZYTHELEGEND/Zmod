@@ -6,7 +6,7 @@ local blacklistedTools = {
 local anticrashMode = true
 
 local function executeCommands(player, toolName)
-    game.Players:Chat("reset " .. player.Name)
+    game.Players:Chat("ungear " .. player.Name)
     game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[Zmod] :\n" .. player.Name .. " has been caught using " .. toolName .. " potentially trying to crash")
 end
 
@@ -45,8 +45,10 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
     if command == ".anticrash" then
         anticrashMode = false
         print("Anti-crash is enabled.")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[Zmod] :\n Anti-Crash Activated")
     elseif command == ".unanticrash" then
         anticrashMode = true
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[Zmod] :\n Anti-Crash DeActivated")
         print("Anti-crash is disabled.")
     end
 end)
