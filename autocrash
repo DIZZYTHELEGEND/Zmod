@@ -8,7 +8,7 @@
   loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/test'),true))()
 
 
-
+wait(1)
 
 
 
@@ -38,7 +38,7 @@ end
 
 
 
-    task.wait(3)
+wait(3)
     
     
     
