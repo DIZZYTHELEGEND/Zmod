@@ -1,164 +1,124 @@
+local spam = false
+
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
-	if string.sub(msg:lower(), 0, 5) == "?spam" then 
-		local text = string.sub(msg:lower(), 7)
-		spam=true
+	if string.sub(msg:lower(), 1, 5) == "?spam" then 
+		local text = string.sub(msg, 7)
+		spam = true
 		
-		while spam == true do
+		while spam do
 			game.Players:Chat(text)
 			wait(0.005)
-
-
 		end
 	end
 end)
 
-
-
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
-	if string.sub(msg:lower(), 0, 5) == "?stop" then
+	if string.sub(msg:lower(), 1, 5) == "?stop" then
 		spam = false
-		
 	end
 end)
 
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
-if string.sub(msg:lower(), 0, 4) == "?ref" then 
-game.Players:Chat("reset me")
-end
+	if string.sub(msg:lower(), 1, 4) == "?ref" then 
+		game.Players:Chat("reset me")
+	end
 end)
 
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
-if string.sub(msg:lower(), 0, 4) == "?tpm" then 
-game.Players:Chat("tp me me me")
-end
+	if string.sub(msg:lower(), 1, 4) == "?tpm" then 
+		game.Players:Chat("tp me me me")
+	end
 end)
-
-
 
 local collectingAdminPads = false
 local adminPadsCollected = {}
 
 local function collectAdminPads()
-    local workspace = game:GetService("Workspace")
-    local player = game.Players.LocalPlayer
+	local workspace = game:GetService("Workspace")
+	local player = game.Players.LocalPlayer
 
-    while collectingAdminPads do
-        adminPadsCollected = {} -- Reset the table
+	while collectingAdminPads do
+		adminPadsCollected = {} -- Reset the table
 
-        local adminPads = workspace.Terrain["_Game"].Admin.Pads:GetChildren()
-        for i, pad in ipairs(adminPads) do
-            local head = pad:FindFirstChild("Head")
-            if head then
-                local padCFrame = head.CFrame
+		local adminPads = workspace.Terrain["_Game"].Admin.Pads:GetChildren()
+		for i, pad in ipairs(adminPads) do
+			local head = pad:FindFirstChild("Head")
+			if head then
+				local padCFrame = head.CFrame
 
-                local originalTransparency = head.Transparency
-                head.Transparency = 1 -- Make the head part invisible
+				local originalTransparency = head.Transparency
+				head.Transparency = 1 -- Make the head part invisible
 
-                head.CanCollide = false
-                wait(0)
+				head.CanCollide = false
+				wait(0)
 
-                if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-                    head.CFrame = player.Character.HumanoidRootPart.CFrame
-                end
+				if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					head.CFrame = player.Character.HumanoidRootPart.CFrame
+				end
 
-                wait(0)
-                head.CFrame = padCFrame
-                head.CanCollide = true
+				wait(0)
+				head.CFrame = padCFrame
+				head.CanCollide = true
 
-                head.Transparency = originalTransparency -- Restore the original transparency
+				head.Transparency = originalTransparency -- Restore the original transparency
 
-                adminPadsCollected[pad] = true
-            end
-        end
+				adminPadsCollected[pad] = true
+			end
+		end
 
-        wait(0)
-    end
+		wait(0)
+	end
 end
 
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
-    local command = string.lower(msg)
-    
-    if command == "?lg" then
-        if not collectingAdminPads then
-            collectingAdminPads = true
-            collectAdminPads()
-            print("Started collecting admin pads.")
-        else
-            print("Already collecting admin pads.")
-        end
-    elseif command == "?unlg" then
-        collectingAdminPads = false
-        print("Stopped collecting admin pads.")
-    end
+	local command = string.lower(msg)
+	
+	if command == "?lg" then
+		if not collectingAdminPads then
+			collectingAdminPads = true
+			collectAdminPads()
+		end
+	elseif command == "?unlg" then
+		collectingAdminPads = false
+	end
 end)
-
-
-
-
-
-
 
 local antikillMode = false
 
 local function resetPlayer()
-    game.Players:Chat("reset me")
-wait(0.1)
-game.Players:Chat("god me")
+	game.Players:Chat("reset me")
+	wait(0.1)
+	game.Players:Chat("god me")
 end
 
 local function onCharacterAdded(character)
-    local humanoid = character:WaitForChild("Humanoid")
-    
-    humanoid.HealthChanged:Connect(function(health)
-        if health <= 0 and antikillMode then
-            resetPlayer()
-        end
-    end)
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	humanoid.HealthChanged:Connect(function(health)
+		if health <= 0 and antikillMode then
+			resetPlayer()
+		end
+	end)
 end
 
 local function toggleAntikillMode()
-    antikillMode = not antikillMode
-    
-    if antikillMode then
-        print("Antikill mode enabled.")
-    else
-        print("Antikill mode disabled.")
-    end
+	antikillMode = not antikillMode
 end
 
 game.Players.LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
 
 game.Players.LocalPlayer.Chatted:Connect(function(message)
-    local command = message:lower()
-    
-    if command == "?antikill" then
-        toggleAntikillMode()
-    elseif command == "?unantikill" then
-        toggleAntikillMode()
-    end
+	local command = message:lower()
+	
+	if command == "?antikill" then
+		toggleAntikillMode()
+	elseif command == "?unantikill" then
+		toggleAntikillMode()
+	end
 end)
 
 game.Players.LocalPlayer.Chatted:Connect(function(msg)
-	if string.sub(msg:lower(), 0, 5) == "?perm" then
-
-
-https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/perm2
-end
+	if string.sub(msg:lower(), 1, 5) == "?perm" then
+		game.Players:Chat("https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/perm2")
+	end
 end)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
