@@ -138,5 +138,27 @@ game.Players.LocalPlayer.Chatted:Connect(function(message)
     end
 end)
 
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+	if string.sub(msg:lower(), 0, 5) == "?perm" then
+
+
+https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/perm2
+end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
