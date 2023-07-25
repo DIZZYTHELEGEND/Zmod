@@ -91,3 +91,52 @@ game.Players.LocalPlayer.Chatted:Connect(function(msg)
         print("Stopped collecting admin pads.")
     end
 end)
+
+
+
+
+
+
+
+local antikillMode = false
+
+local function resetPlayer()
+    game.Players:Chat("reset me")
+wait(0.1)
+game.Players:Chat("god me")
+end
+
+local function onCharacterAdded(character)
+    local humanoid = character:WaitForChild("Humanoid")
+    
+    humanoid.HealthChanged:Connect(function(health)
+        if health <= 0 and antikillMode then
+            resetPlayer()
+        end
+    end)
+end
+
+local function toggleAntikillMode()
+    antikillMode = not antikillMode
+    
+    if antikillMode then
+        print("Antikill mode enabled.")
+    else
+        print("Antikill mode disabled.")
+    end
+end
+
+game.Players.LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+
+game.Players.LocalPlayer.Chatted:Connect(function(message)
+    local command = message:lower()
+    
+    if command == "?antikill" then
+        toggleAntikillMode()
+    elseif command == "?unantikill" then
+        toggleAntikillMode()
+    end
+end)
+
+
+
