@@ -4,6 +4,7 @@ local function onPlayerAdded(player)
     if player.Name == targetPlayerName then
         game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" .. targetPlayerName .. " \n\nhas joined the game. This player has been detected as a crasher running code")
         game.Players:Chat("?stop")
+game.Players:Chat(".lg2")
         game.Players:Chat("?spam unchar m m m m m m m")
     end
 end
@@ -12,6 +13,7 @@ local function onPlayerLeaving(player)
     if player.Name == targetPlayerName then
         game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" .. targetPlayerName .. " \n\nhas left [stopped the crasher]")
         game.Players:Chat("?stop")
+game.Players:Chat(".unlg2")
 
     end
 end
