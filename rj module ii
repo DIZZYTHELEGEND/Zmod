@@ -1,0 +1,7 @@
+	elseif string.sub(msg:lower(), 1, 3) == DIZprefix.."rej"
+	or string.sub(msg:lower(), 1, 2) == DIZprefix.."rj" then
+		local ts = game:GetService("TeleportService")
+		local p = game.Players.LocalPlayer
+		local currentPlaceId = game.PlaceId
+		local currentJobId = game.JobId
+		ts:TeleportToPlaceInstance(currentPlaceId, currentJobId, p)
