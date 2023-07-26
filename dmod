@@ -1,0 +1,394 @@
+local autobl = true
+
+
+
+
+
+------------------------------------------------------------------------------]]
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/DIMOD%20shortcuts'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/anti%20KAHCrasher'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DIZZYTHELEGEND/Zmod/main/lg2'),true))() 
+
+------------------------------------------------------------------------------]]
+
+
+
+local gameFlr = workspace.Terrain._Game
+local adminFlr = gameFlr.Admin
+
+local userId = game.Players.LocalPlayer.UserId
+
+-- services
+local rns = game:GetService("RunService")
+local tps = game:GetService("TeleportService")
+local http = game:GetService("HttpService")
+local ws = game:GetService("Workspace")
+local plyrs = game:GetService("Players")
+local uis = game:GetService("UserInputService")
+
+shared.gpcheck = true
+
+task.spawn(function()
+    while true do task.wait() -- It uses while true do instead now
+        coroutine.wrap(function() -- PadAbuse
+			if padAbuse == true then
+				local pads = game:GetService("Workspace").Terrain["_Game"].Admin.Pads:GetChildren("Head")
+				for i, pad in pairs(pads) do
+					coroutine.wrap(function()
+						pcall(function()
+							local cre = pad.Head
+							local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+							firetouchinterest(cre, spr, 1)
+                            firetouchinterest(cre, spr, 0)
+                            firetouchinterest(cre, spr, 1)
+							task.wait()
+							firetouchinterest(cre, spr, 0)
+							
+							if pad.Name ~= game.Players.LocalPlayer.Name.."'s admin" then
+								fireclickdetector(adminFlr.Regen.ClickDetector, 0)
+							end
+						end)
+					end)()
+				end
+			end
+        end)()
+		
+        coroutine.wrap(function() -- Perm
+			local spr = game.Players.LocalPlayer.Character:FindFirstChild("Head")
+			if perm ~= true or adminFlr.Pads:FindFirstChild(game.Players.LocalPlayer.Name.."'s admin") ~= nil then 
+			else
+				pcall(function()
+					local pad = adminFlr.Pads:FindFirstChild("Touch to get admin")
+					local a = pad.Head
+					firetouchinterest(a, spr, 1)
+                    firetouchinterest(a, spr, 0)
+                    firetouchinterest(a, spr, 1)
+					task.wait()
+					firetouchinterest(a, spr, 0)
+				end)
+			end
+        end)()
+    end
+end)
+
+--// Gamepass checker \\--
+
+task.spawn(function()
+    local passid = 66254 or 64354
+    if shared.gpcheck == true then
+        if string.match(game:HttpGet("https://inventory.roblox.com/v1/users/" .. userId .. "/items/GamePass/" .. passid), passid) then
+            print("Perm found")
+            gamepassperm = true
+            perm = false 
+            print("Fake perm for those that didn't buy the gamepass. It's pointless if you do have it unless the API has an outage")
+        else
+            print("Perm not found. Enabling pad grabber")
+            perm = true
+        end
+    end
+end)
+
+wait(2)
+
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDIMOD Loaded")
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo Errors Found")
+
+
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreds To DIZZY/Di33le2")
+
+
+
+
+local toolNames = {
+    "VampireVanquisher",
+    "OrinthianSwordAndShield",
+    "IvoryPeriastron",
+    "SubspaceTripmine",
+    "Transmorpher",
+    "IceStaff",
+    "BlackHoleSword",
+    "ViridianThrowingKnives",
+    "LaserFingerPointers",
+    "SledgeHammer",
+    "DaggerOfShatteredDimensions",
+    "KorbloxSwordAndShield",
+    "Amethyst Annihilation",
+    "AzurePeriastron",
+    "ChartreusePeriastron",
+    "CrimsonPeriastron",
+    "GrimgoldPeriastron",
+    "TelamonsterTheChaosEdge",
+    "RainbowPeriastron",
+    "PaintBucket",
+    "DriveBloxUltimateCar"
+}
+
+local whitelist = {
+    "Di33le2",
+    "The_0BC",
+    "Ripend",
+    "SZCVAK",
+    "KTMY1",
+    "iTsMeRebirth555",
+    "Altsarecooleh",
+    "Thierry_BaudetREAL",
+    "Dizzy_TheDev",
+    "xorobf1239",
+    "xorobf",
+    "t_echr",
+    "ovical"
+    -- Add more whitelisted player names here
+}
+local function isBlacklistedGear(toolName)
+    for _, blacklistedName in ipairs(toolNames) do
+        if toolName:lower() == blacklistedName:lower() then
+            return true
+        end
+    end
+    return false
+end
+
+local function isWhitelisted(playerName)
+    for _, whitelistedPlayer in ipairs(whitelist) do
+        if playerName:lower() == whitelistedPlayer:lower() then
+            return true
+        end
+    end
+    return false
+end
+
+local isDigging = false
+
+local function CheckGear()
+    while isDigging do
+        for _, player in pairs(game.Players:GetPlayers()) do
+            if not isWhitelisted(player.Name) then
+                for _, toolName in ipairs(toolNames) do
+                    local toolHint = toolName
+                    if isBlacklistedGear(toolName) and (player.Backpack:FindFirstChild(toolName) or player.Character:FindFirstChild(toolName)) then
+                        game.Players:Chat("reset " .. player.Name)
+                        wait(0.1)
+                        game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDIMOD: \n\n\n\n " .. toolHint .. " Detected\n\n\n('" .. player.Name .. "')\n\n\n Just tried to use a Blacklisted Gear!. Player Has Been [Ungeared]")
+                        break
+                    end
+                end
+            end
+        end
+        wait()
+    end
+end
+
+-- Create the digstart command
+game.Players.LocalPlayer.Chatted:Connect(function(message)
+    if message:lower() == "?blgears" then
+        if not isDigging then
+            isDigging = true
+            CheckGear()
+        end
+    end
+end)
+
+-- Create the digstop command
+game.Players.LocalPlayer.Chatted:Connect(function(message)
+    if message:lower() == "?unblgears" then
+        isDigging = false
+    end
+end)
+
+
+
+
+local spamEnabled = false
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    local command, player = string.match(msg:lower(), "%?(%w+)%s+(%w+)")
+    
+    if command and player then
+        if command == "lock" then
+            spamEnabled = true
+            print("Spam enabled for player: " .. player)
+            while spamEnabled do
+                game.Players:Chat("freeze " .. player)
+                wait(0.025)
+                game.Players:Chat("size " .. player .. " nan")
+                wait(0.025)
+                game.Players:Chat("size " .. player .. " 0.3")
+                wait(0.025)
+                game.Players:Chat("setgrav " .. player .. " 3000")
+                wait(0.025)
+                game.Players:Chat("speed " .. player .. " 0")
+                wait(0.025)
+                game.Players:Chat("thaw " .. player)
+                wait(0.1) -- Wait for 0.1 seconds before repeating the actions
+            end
+        elseif command == "unlock" then
+            spamEnabled = false
+            print("Spam disabled for player: " .. player)
+        end
+    end
+    
+end)
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 6) == "?frick" then
+        local text = string.sub(msg:lower(), 8)
+        game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n.F")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n   .u")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n       .c")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n           .k")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n" .. text)
+    end
+end)
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 3) == "?rj" then
+        local ts = game:GetService("TeleportService")
+        local p = game:GetService("Players").LocalPlayer
+
+        -- Get the current server place ID
+        local currentPlaceId = game.PlaceId
+        local currentJobId = game.JobId
+
+        -- Teleport the player to the same server
+        ts:TeleportToPlaceInstance(currentPlaceId, currentJobId, p)
+    end
+end)
+
+
+
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 11) == "?forcecrash" then
+
+
+
+game.Players:Chat("h oops!")
+
+game.Players:Chat("gear me 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000178076749")
+
+wait(0.1)
+   
+game.Players.LocalPlayer.Backpack:WaitForChild("Emerald Knights of the Seventh Sanctum Sword and Shield").Parent = game.Players.LocalPlayer.Character
+wait(0.2)
+for i=1,100 do
+game.Players:Chat("dog all all all")
+end
+for i=1,1000 do
+game.Players:Chat("clone all all all")
+end
+
+end
+
+end)
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 16) == "?localremoveobby" then
+
+local obby = game:GetService("Workspace").Terrain["_Game"].Workspace.Obby
+local obbyParent = obby and obby.Parent
+obby:Destroy()
+
+
+game:GetService("Workspace").Terrain["_Game"].Workspace["Obby Box"]:Destroy()
+--client side obby remover
+end
+end)
+
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 5) == "?cmds" then
+        print('DIMOD By DIZZY this script is private and may not be shared be considerate and understand the rule that you can share this script')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('>Moderation<')
+        print('')
+        print('[?blgears] = Blacklists Abusive gears and is also an Anti-Crash (Auto Turns on when executed)')
+        print('[?unblgears] = Unblacklists Abusive gears and Stops the Anti-Crash')
+        print('')
+        print('[?lock] [plr] = makes the game unplayable for the selected player (may effect the Anti-AbusiveGears/Crash)')
+        print('[?unlock] [plr] = makes the game playable for the selected player if they where previously locked')
+        print('')
+        print('')
+        print('>Info On Zmod (Cmds)<')
+        print('')
+        print('[?pubinfo] = displays the info to everyone')
+        print('[?pubexesions] = displays the extensions to everyone')
+        print('')
+        print('>Useless<')
+        print('')
+        print('[?frick] [plr] = plays a bypassed Fuck [plr] to the whole server')
+        print('')
+        print('')
+        print('>Blacklisted Gears List<')
+        print('')
+        print(toolNames)
+        print('')
+        print('')
+        print('>Whitelisted Players For Anti-BlacklistGears/Crash<')
+        print('')
+        print(whitelist)
+        
+        end
+        end)
+        
+        game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 14) == "?pubextensions" then
+        
+        game.Players:Chat("h n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAll DiMod Extensions\n\n\n(DiMod command shortcuts),\n\n(Anti KAHCrasher),\n\n(loopgrab)")                 
+        end     
+end)
+
+        game.Players.LocalPlayer.Chatted:Connect(function(msg)
+    if string.sub(msg:lower(), 1, 8) == "?pubinfo" then
+        
+        game.Players:Chat("h n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInfo On DiMod\n\n\nDiMod is a moderation script\nto reduce crashing and stop abusing gears\n\n\n\nAll made by DIZZY :D")                 
+        end     
+end)
+
+
+
+
+
+
+
+
+
+if autobl then
+wait(2)
+    game.Players:Chat("?blgears")
+    game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nServer Moderation = True")
+    game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n protected by DIMOD")
+else
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nServer Moderation = False")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n server isnt protected by DIMOD")
+end
+
+
+
+
+
+
+wait(5)
+
+
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\Join DIMOD Server for Updates")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\Dsc")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\           gg")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\                     /Zer")
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\                                con")
+
+game.Players:Chat("h n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAll DIMOD extensions Loaded")
+
+
+local text = "DIMOD By DIZZY this script is private and may not be shared be considerate and understand the rule that you can share this script\n\n\n\n>Moderation<\n\n[?blgears] = Blacklists Abusive gears and is also an Anti-Crash (Auto Turns on when executed)\n[?unblgears] = Unblacklists Abusive gears and Stops the Anti-Crash\n\n[?lock] [plr] = makes the game unplayable for the selected player (may affect the Anti-AbusiveGears/Crash)\n[?unlock] [plr] = makes the game playable for the selected player if they were previously locked\n\n\n>Info On Zmod (Cmds)<\n\n[?pubinfo] = displays the info to everyone\n[?pubexesions] = displays the extensions to everyone\n\n>Useless<\n\n[?frick] [plr] = plays a bypassed Fuck [plr] to the whole server\n\n\n>Blacklisted Gears List<\n\nVampireVanquisher\nOrinthianSwordAndShield\nIvoryPeriastron\nSubspaceTripmine\nTransmorpher\nIceStaff\nBlackHoleSword\nViridianThrowingKnives\nLaserFingerPointers\nSledgeHammer\nDaggerOfShatteredDimensions\nKorbloxSwordAndShield\nAmethyst Annihilation\nAzurePeriastron\nChartreusePeriastron\nCrimsonPeriastron\nGrimgoldPeriastron\nTelamonsterTheChaosEdge\nRainbowPeriastron\nPaintBucket\nDriveBloxUltimateCar\n\n\n>Whitelisted Players For Anti-BlacklistGears/Crash<\n\nDi33le2\nThe_0BC\nRipend\nSZCVAK\nKTMY1\niTsMeRebirth555\nAltsarecooleh\nThierry_BaudetREAL\nDizzy_TheDev\nxorobf1239\nxorobf\nt_echr\novical\nDi33le3"
+
+
+writefile("ZerconCmds.txt", text)
+
+
