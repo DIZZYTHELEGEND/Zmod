@@ -1,0 +1,23 @@
+local targetPlayerName = "laladulidog"
+
+local function onPlayerAdded(player)
+    if player.Name == targetPlayerName then
+        game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" .. targetPlayerName .. " \n\nhas joined the game. This player has been detected as a Griefer running anti player")
+        game.Players:Chat("?stop")
+        game.Players:Chat("?spam unchar laladulidog laladulidog laladulidog laladulidog laladulidog laladulidog laladulidog laladulidog")
+game.Players:Chat(".lg2")
+    end
+end
+
+local function onPlayerLeaving(player)
+    if player.Name == targetPlayerName then
+        game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" .. targetPlayerName .. " \n\nhas left [stopped the crasher]")
+        game.Players:Chat("?stop")
+game.Players:Chat(".unlg2")
+
+    end
+end
+
+game.Players.PlayerAdded:Connect(onPlayerAdded)
+game.Players.PlayerRemoving:Connect(onPlayerLeaving)
+print('running anti player crash')
