@@ -1,0 +1,19 @@
+
+local terrain = game.Workspace.Terrain -- You may use the correct reference to your terrain object
+local prefix = "!" -- Change this to your desired chat command prefix
+local lowerMsg = string.lower(message) -- Assuming 'message' contains the chat message content
+
+local gameFolder = terrain:FindFirstChild("_Game")
+if gameFolder then
+    local Folder = gameFolder:FindFirstChild("Folder")
+    if Folder then
+        local sound = Folder:FindFirstChild("Sound")
+        if sound then
+            if lowerMsg:sub(1, #prefix + 8) == prefix.."pausesong" then
+                sound.Playing = false
+            elseif lowerMsg:sub(1, #prefix + 7) == prefix.."playsong" then
+                sound.Playing = true
+            end
+        end
+    end
+end
