@@ -205,7 +205,7 @@ end)
 game:GetService("Players"):Chat("gear me 00000000000000000018474459")
 		wait(0.2)
 		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
-		wait(0.1)
+		wait(0.2)
 		coroutine.wrap(function()
 			colorAPI.colorHouse({
 				wallsC = colorAPI.transformToColor3(BrickColor.new("Brick yellow")),
