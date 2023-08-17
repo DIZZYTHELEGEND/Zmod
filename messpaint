@@ -1,7 +1,31 @@
 local colorNames = {
-    "Bright blue", "Bright green", "Bright red", "Dark orange",
-    "Dark stone grey", "Deep blue", "New Yeller", "Lime green",
-    "Medium stone grey", "Really black", "Toothpaste", "Really red"
+    "Alder", "White", "Artichoke", "Baby blue", "Beige", "Baby blue",
+    "Black", "Br. yellowish green", "Br. yellowish orange", "Brick yellow",
+    "Bright blue", "Bright bluish green", "Bright green", "Bright orange",
+    "Bright red", "Bright violet", "Bright yellow", "Bronze", "Brown",
+    "Burgundy", "Burlap", "Burnt Sienna", "Buttermilk", "CGA brown",
+    "Cadet blue", "Camo", "Carnation pink", "Cashmere", "Cloudy grey",
+    "Cocoa", "Cool yellow", "Copper", "Cork", "Crimson", "Cyan",
+    "Daisy orange", "Dark blue", "Dark green", "Dark indigo", "Dark orange",
+    "Dark stone grey", "Dark stone grey", "Dark taupe", "Deep blue",
+    "Deep orange", "Dirt brown", "Dusty Rose", "Earth green", "Eggplant",
+    "Electric blue", "Fawn brown", "Flint", "Fog", "Forest green",
+    "Forest green", "Fossil", "Fossil", "Ghost grey", "Gold", "Grime",
+    "Hot pink", "Hurricane grey", "Institutional white", "Isabella", "Khaki",
+    "Lapis", "Laurel green", "Lavender", "Light blue", "Light orange",
+    "Light reddish violet", "Light stone grey", "Lilac", "Lilac",
+    "Lily white", "Lime green", "Linen", "Magenta", "Maroon", "Mauve",
+    "Medium blue", "Medium green", "Medium red", "Medium red", "Medium stone grey",
+    "Medium stone grey", "Mid gray", "Mid gray", "Midnight blue", "Midnight green",
+    "Mint", "Moss", "Mulberry", "Navy blue", "Neon orange", "New Yeller",
+    "Nougat", "Olive", "Olivine", "Oyster", "Parsley green", "Pastel Blue",
+    "Pastel blue-green", "Pastel brown", "Pastel green", "Pastel light blue",
+    "Pastel orange", "Pastel violet", "Pastel yellow", "Pearl", "Persimmon",
+    "Pine Cone", "Pink", "Plum", "Plum", "Quill grey", "Really black",
+    "Really blue", "Really red", "Reddish brown", "Royal purple", "Rust",
+    "Sage green", "Salmon", "Sand blue", "Sand green", "Sand red", "Sea green",
+    "Seashell", "Shamrock", "Slime green", "Smoky grey", "Steel blue", "Storm blue",
+    "Sunrise", "Tawny", "Teal", "Terra Cotta", "Toothpaste", "Wheat"
 }
 
 local function getRandomColorName()
