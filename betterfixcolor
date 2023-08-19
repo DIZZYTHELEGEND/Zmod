@@ -248,6 +248,6 @@ end)
 		task.spawn(function()
 			colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")))
 		end)
-wait(0.1.7)
+wait(0.17)
 game.Players:Chat("ungear                                                                                               me fuck "..math.random(99999))
 --nil
