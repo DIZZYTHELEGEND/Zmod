@@ -209,7 +209,7 @@ game.Players:Chat("gear me 00000000000000000000000000000000000000000000000000000
             v.Parent = game.Players.LocalPlayer.Character
             v:Activate()
         end
-        task.wait(0.05)
+        task.wait(0.1)
 		coroutine.wrap(function()
 			colorAPI.colorHouse({
 				wallsC = colorAPI.transformToColor3(BrickColor.new("Brick yellow")),
