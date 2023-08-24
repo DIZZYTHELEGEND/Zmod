@@ -12,3 +12,4 @@ for _, player in pairs(game.Players:GetPlayers()) do
            game.Players:Chat("h/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n∞ Empathy.lua ∞\n\n\n\n\nRules:\n\n\n\n\nNo Crashing\nThis includes gears and silent\n\n\No abusing\nThis includes skydive,explode,kill,swagify,dog and punish")
            end
            end)
+end
