@@ -1,0 +1,14 @@
+for _, player in pairs(game.Players:GetPlayers()) do
+    player.Chatted:Connect(function(Message)
+        local lowerMessage = Message:lower()
+         if string.sub(lowerMessage, 1, 6) == "/rules" then
+            wait(0.1)
+           game.Players:Chat("h/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n∞ Empathy.lua ∞\n\n\n\n\nRules:\n\n\n\n\nNo Crashing\nThis includes gears and silent\n\n\No abusing\nThis includes skydive,explode,kill,swagify,dog and punish")
+           wait(1.2)
+           game.Players:Chat("h/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n∞ Empathy.lua ∞\n\n\n\n\nRules:\n\n\n\n\nNo Crashing\nThis includes gears and silent\n\n\No abusing\nThis includes skydive,explode,kill,swagify,dog and punish")
+           wait(1.2)
+           game.Players:Chat("h/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n∞ Empathy.lua ∞\n\n\n\n\nRules:\n\n\n\n\nNo Crashing\nThis includes gears and silent\n\n\No abusing\nThis includes skydive,explode,kill,swagify,dog and punish")
+           wait(1.2)
+           game.Players:Chat("h/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n∞ Empathy.lua ∞\n\n\n\n\nRules:\n\n\n\n\nNo Crashing\nThis includes gears and silent\n\n\No abusing\nThis includes skydive,explode,kill,swagify,dog and punish")
+           end
+           end)
