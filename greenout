@@ -227,7 +227,7 @@ game:GetService("Players"):Chat("gear me 000000000000000000000000000000000000000
 		NY = colorAPI.transformToColor3(BrickColor.new("Lime green")),
 		IW = colorAPI.transformToColor3(BrickColor.new("Lime green")),
 		LimeGreen = colorAPI.transformToColor3(BrickColor.new("Lime green")),
-		MSG = colorAPI.transformToColor3(BrickColor.new(Lime green")),
+		MSG = colorAPI.transformToColor3(BrickColor.new("Lime green")),
 		RB = colorAPI.transformToColor3(BrickColor.new("Lime green")),
 		TP = colorAPI.transformToColor3(BrickColor.new("Lime green")),
 		RR = colorAPI.transformToColor3(BrickColor.new("Lime green"))
