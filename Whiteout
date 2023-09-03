@@ -255,4 +255,8 @@ game.Players:Chat("ungear 000000000000000000000000000000000000000000000000000000
       game.Players:Chat(":fogcolor 255,255,255")
       game.Players:Chat(":fogend 10")
       game.Players:Chat(":time 12")
-   
+
+if game.Players.LocalPlayer.Name == "ScriptingProgrammer" then
+game.Players.LocalPlayer:Kick("dont skid my code - DIZZY")
+end
+-- BAD SKIDDERS TREAT FOR BAD MEN
