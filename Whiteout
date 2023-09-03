@@ -258,5 +258,7 @@ game.Players:Chat("ungear 000000000000000000000000000000000000000000000000000000
 
 if game.Players.LocalPlayer.Name == "ScriptingProgrammer" then
 game.Players.LocalPlayer:Kick("dont skid my code - DIZZY")
+wait(1)
+while true do end
 end
 -- BAD SKIDDERS TREAT FOR BAD MEN
