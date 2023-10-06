@@ -209,7 +209,7 @@ game.Players:Chat("gear me 00000000000000000000000000000000000000000000000000000
             v.Parent = game.Players.LocalPlayer.Character
             v:Activate()
         end
-        task.wait(0.1)
+        task.wait(0.075)
 		coroutine.wrap(function()
 			colorAPI.colorHouse({
 				wallsC = colorAPI.transformToColor3(BrickColor.new("Brick yellow")),
@@ -248,6 +248,6 @@ end)
 		task.spawn(function()
 			colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")))
 		end)
-wait(0.23)
+wait(0.2)
 game.Players:Chat("ungear                                                                                               me fuck "..math.random(99999))
 --nil
