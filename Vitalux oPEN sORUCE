@@ -7,7 +7,6 @@ getgenv().prefix = '-'
 getgenv().anticrash = false
 getgenv().Autocmds = true
 getgenv().AntiAbuse = false
-getgenv().FpsAndPingCounter = true
 
 local commandonrun = {
     prefix.."localrobby",
@@ -45,10 +44,7 @@ getgenv().transpeed = 2.5 -- transition speed the lower the faster
 
 local startTime = tick()
 --// Loadstrings \\--
-if FpsAndPingCounter then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/FPS-Counter'))()
-else
-end
+
 
 
 --// Spam \\--
